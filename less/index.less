@@ -1,0 +1,57 @@
+
+
+
+@import "variables.less"; 
+@import "mixins.less";
+
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 62.5%;
+  }
+  
+  html, body {
+    margin: 0; 
+    padding: 0;
+  }
+  
+
+  h1{
+    font-size: 4rem; 
+    letter-spacing: 0.3rem;
+  }
+  body {
+    background-image: url('../img/dot.png');
+    background-repeat: repeat;
+    background-size: 15px 15px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif; 
+    letter-spacing: 0.1rem;
+
+    .container {
+      padding: 20px 30px 30px 30px;
+
+      margin: 0 auto;
+      max-width: 900px; 
+      position: relative;
+      z-index: 1;
+      color: #fff;
+    }
+
+    .header-background{
+      height: 500px;
+      clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+      background-color: @pokestats-color-primary;
+      z-index: 0;
+      position: absolute;
+      width: 100%;
+    }
+
+   }
+
+
+  @import "components/header/header.less";
+  @import "components/nav.less";
+  @import "components/feature1.less";
