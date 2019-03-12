@@ -156,35 +156,38 @@ header h2 .main-word .word-showing {
 footer {
   display: flex;
   justify-content: flex-start;
-  align-items: none;
+  align-items: space-between;
   flex-direction: column;
-  padding-top: 2rem;
-  background: #1D1D1D;
-  margin-top: 5rem;
+  padding-top: 3rem;
+  background: black;
+  margin-top: 8rem;
   width: 100%;
-  height: 8rem;
+  height: 12rem;
 }
 footer .footer-nav-social-icons {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
-footer .footer-nav-social-icons nav {
-  width: 70%;
+footer .footer-nav-social-icons .footer-nav {
+  width: 100%;
 }
-footer .footer-nav-social-icons nav .links a {
+footer .footer-nav-social-icons .footer-nav .footer-links a {
+  margin-right: 2rem;
   text-decoration: none;
   font-size: 1.25rem;
   color: white;
 }
-footer .footer-nav-social-icons nav .links a:last-child {
+footer .footer-nav-social-icons .footer-nav .footer-links a:last-child {
   color: #F8FF33;
 }
 footer .footer-nav-social-icons .social-icons {
-  width: 30%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
 }
@@ -192,10 +195,13 @@ footer .footer-nav-social-icons .social-icons img {
   width: 40%;
   height: auto;
 }
+footer .footer-nav-social-icons .social-icons .yellow-icon {
+  display: none;
+}
 footer .copyright {
-  width: 26.6%;
-  text-align: right;
-  margin-top: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 3.5rem;
   font-size: 0.8rem;
   color: white;
 }
@@ -226,8 +232,14 @@ nav .links a {
 nav .links a:last-child {
   color: #F8FF33;
 }
+.homepage .water-icon {
+  height: 5%;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 5%;
+}
 .homepage .feature-one {
-  padding-top: 10rem;
+  padding-top: 15rem;
   padding-bottom: 5rem;
   display: flex;
   justify-content: space-between;
@@ -235,6 +247,10 @@ nav .links a:last-child {
   flex-direction: row;
   max-width: 900px;
   margin: 0 auto;
+}
+.homepage .feature-one:hover .circle {
+  transition: all 1s ease-in;
+  transform: translateX(-300px);
 }
 .homepage .feature-one .feature-description {
   display: flex;
@@ -246,6 +262,15 @@ nav .links a:last-child {
   color: #1D1D1D;
   font-size: 2.5rem;
   font-weight: 500;
+}
+.homepage .feature-one .feature-description h2 .arrow {
+  margin-left: 5rem;
+  position: relative;
+}
+.homepage .feature-one .feature-description h2 .circle {
+  position: absolute;
+  margin-left: 30rem;
+  z-index: -1;
 }
 .homepage .feature-one .feature-description p {
   color: #1D1D1D;
@@ -302,8 +327,8 @@ nav .links a:last-child {
 }
 .homepage .feature-one img {
   height: auto;
-  max-width: 60%;
-  margin-right: -20rem;
+  max-width: 80%;
+  margin-right: -30rem;
 }
 .homepage .feature-two {
   display: flex;
@@ -312,8 +337,8 @@ nav .links a:last-child {
   flex-direction: column;
 }
 .homepage .feature-two .background {
-  height: 600px;
-  clip-path: polygon(0 0, 100% 20%, 100% 75%, 0 100%);
+  height: 700px;
+  clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
   background-color: #1D1D1D;
   z-index: 0;
   position: absolute;
@@ -362,12 +387,35 @@ nav .links a:last-child {
 .homepage .feature-two .learn-images .stats {
   width: 40%;
   height: 40%;
-  padding-top: 2rem;
-  margin-right: 15%;
+  padding-top: 5rem;
+  margin-right: 10%;
 }
-.homepage .feature-two .learn-images .pikachu {
-  width: 40%;
-  height: 40%;
+.homepage .feature-two .learn-images .pikachu-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+.homepage .feature-two .learn-images .pikachu-group .arrow {
+  position: absolute;
+  margin-left: -15rem;
+}
+.homepage .feature-two .learn-images .pikachu-group .circle {
+  position: absolute;
+  margin-left: -22.5rem;
+  margin-bottom: 5rem;
+}
+.homepage .feature-two .learn-images .pikachu-group .pikachu {
+  width: 80%;
+  height: 80%;
+  z-index: 3;
+  margin-left: 10rem;
+}
+.homepage .feature-two .learn-images .pikachu-group .shadow {
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  margin-top: -9rem;
 }
 .homepage .feature-three {
   padding-bottom: 5rem;
@@ -377,12 +425,13 @@ nav .links a:last-child {
   flex-direction: row;
   max-width: 900px;
   margin: 0 auto;
-  height: 700px;
+  height: 500px;
+  margin-bottom: 200px;
 }
 .homepage .feature-three .feature-description {
   display: flex;
   justify-content: space-between;
-  align-items: left;
+  align-items: flex-end;
   flex-direction: column;
   margin-top: -15rem;
 }
@@ -402,7 +451,8 @@ nav .links a:last-child {
 }
 .homepage .feature-three img {
   max-width: 60%;
-  width: 20%;
+  width: 50%;
+  margin-left: -5rem;
   height: auto;
 }
 .homepage .last-section {
@@ -469,6 +519,13 @@ nav .links a:last-child {
   color: #1D1D1D;
   font-size: 1.8rem;
   position: relative;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.homepage .last-section .sign-up-button:hover {
+  cursor: pointer;
+  color: black;
+  border-radius: 2rem;
 }
 * {
   box-sizing: border-box;
