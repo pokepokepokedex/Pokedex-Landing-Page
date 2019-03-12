@@ -219,15 +219,21 @@ nav .logo {
   align-items: center;
   flex-direction: row;
 }
+nav .logo:hover {
+  cursor: pointer;
+}
 nav .logo p {
   margin-left: 1.5rem;
   font-size: 1.5rem;
 }
 nav .links a {
   text-decoration: none;
-  margin-left: 1rem;
+  margin-left: 4rem;
   font-size: 1.25rem;
   color: white;
+}
+nav .links a:hover {
+  text-decoration: underline;
 }
 nav .links a:last-child {
   color: #F8FF33;
@@ -338,7 +344,7 @@ nav .links a:last-child {
 }
 .homepage .feature-two .background {
   height: 700px;
-  clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
+  clip-path: polygon(0 0, 100% 10%, 100% 80%, 0 100%);
   background-color: #1D1D1D;
   z-index: 0;
   position: absolute;
@@ -354,7 +360,7 @@ nav .links a:last-child {
   margin: 0 auto;
   z-index: 1;
   position: relative;
-  padding-top: 10%;
+  padding-top: 15%;
 }
 .homepage .feature-two .feature-description h2 {
   color: #fff;
@@ -433,7 +439,7 @@ nav .links a:last-child {
   justify-content: space-between;
   align-items: flex-end;
   flex-direction: column;
-  margin-top: -15rem;
+  margin-top: -10rem;
 }
 .homepage .feature-three .feature-description h2 {
   color: #1D1D1D;
@@ -452,7 +458,8 @@ nav .links a:last-child {
 .homepage .feature-three img {
   max-width: 60%;
   width: 50%;
-  margin-left: -5rem;
+  margin-left: -2rem;
+  margin-top: -10rem;
   height: auto;
 }
 .homepage .last-section {
