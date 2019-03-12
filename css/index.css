@@ -153,9 +153,6 @@ header h2 .main-word .word-showing {
   text-align: center;
   color: #F8FF33;
 }
-header h2 span {
-  color: #F8FF33;
-}
 footer {
   display: flex;
   justify-content: flex-start;
