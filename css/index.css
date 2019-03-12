@@ -153,8 +153,51 @@ header h2 .main-word .word-showing {
   text-align: center;
   color: #F8FF33;
 }
-header h2 span {
+footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: none;
+  flex-direction: column;
+  padding-top: 2rem;
+  background: #1D1D1D;
+  margin-top: 5rem;
+  width: 100%;
+  height: 8rem;
+}
+footer .footer-nav-social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+footer .footer-nav-social-icons nav {
+  width: 70%;
+}
+footer .footer-nav-social-icons nav .links a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: white;
+}
+footer .footer-nav-social-icons nav .links a:last-child {
   color: #F8FF33;
+}
+footer .footer-nav-social-icons .social-icons {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+footer .footer-nav-social-icons .social-icons img {
+  width: 40%;
+  height: auto;
+}
+footer .copyright {
+  width: 26.6%;
+  text-align: right;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: white;
 }
 nav {
   display: flex;
@@ -216,11 +259,46 @@ nav .links a:last-child {
   width: 20rem;
   margin-top: 3rem;
   border-radius: 1rem;
+  background-color: white;
+  box-shadow: 2px 2px 10px rgba(29, 29, 29, 0.8);
+  border: 1px solid #1D1D1D;
+  color: #1D1D1D;
+  font-size: 1.4rem;
+  position: relative;
+  overflow: hidden;
+}
+.homepage .feature-one .feature-description button span {
+  position: relative;
+  z-index: 1;
+}
+.homepage .feature-one .feature-description button:after {
+  position: absolute;
+  transition: 0.3s;
+  content: '';
+  width: 0;
+  left: 50%;
+  bottom: 0;
+  height: 3px;
   background-color: #51d7ef;
+}
+.homepage .feature-one .feature-description button:after {
+  height: 120%;
+  left: -20%;
+  transform: skewX(15deg);
+  z-index: 0;
+}
+.homepage .feature-one .feature-description button:hover {
+  cursor: pointer;
+  color: white;
   box-shadow: 2px 2px 15px rgba(94, 255, 252, 0.8);
   border-style: none;
-  color: white;
-  font-size: 1.4rem;
+}
+.homepage .feature-one .feature-description button:hover:after {
+  width: 100%;
+  left: 0;
+  left: -10%;
+  width: 120%;
+  z-index: 0;
 }
 .homepage .feature-one img {
   height: auto;
@@ -245,13 +323,13 @@ nav .links a:last-child {
 .homepage .feature-two .feature-description {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-direction: column;
   max-width: 900px;
   margin: 0 auto;
   z-index: 1;
   position: relative;
-  padding-top: 20rem;
+  padding-top: 10%;
 }
 .homepage .feature-two .feature-description h2 {
   color: #fff;
@@ -277,7 +355,7 @@ nav .links a:last-child {
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  align-items: right;
+  align-items: flex-start;
   flex-direction: row;
   margin-top: 2rem;
 }
@@ -292,7 +370,6 @@ nav .links a:last-child {
   height: 40%;
 }
 .homepage .feature-three {
-  padding-top: 10rem;
   padding-bottom: 5rem;
   display: flex;
   justify-content: space-between;
@@ -300,36 +377,49 @@ nav .links a:last-child {
   flex-direction: row;
   max-width: 900px;
   margin: 0 auto;
+  height: 700px;
 }
 .homepage .feature-three .feature-description {
   display: flex;
   justify-content: space-between;
   align-items: left;
   flex-direction: column;
+  margin-top: -15rem;
 }
 .homepage .feature-three .feature-description h2 {
   color: #1D1D1D;
   font-size: 2.5rem;
   font-weight: 500;
+  align-items: center;
 }
 .homepage .feature-three .feature-description p {
   color: #1D1D1D;
   font-size: 1.8rem;
-  width: 80;
+  width: 70%;
   padding-top: 2.5rem;
   line-height: 1.6;
+  align-items: center;
 }
 .homepage .feature-three img {
-  height: auto;
   max-width: 60%;
+  width: 20%;
+  height: auto;
 }
-.homepage .feature-four {
+.homepage .last-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.homepage .last-section .feature-four {
   display: flex;
   justify-content: space-between;
-  align-items: left;
-  flex-direction: row;
+  align-items: center;
+  flex-direction: row-reverse;
+  max-width: 900px;
+  margin: 0 auto;
 }
-.homepage .feature-four .background {
+.homepage .last-section .feature-four .background {
   height: 600px;
   clip-path: polygon(0 0, 100% 20%, 100% 75%, 0 100%);
   background-color: #1D1D1D;
@@ -338,44 +428,47 @@ nav .links a:last-child {
   width: 100%;
   left: 0;
 }
-.homepage .feature-four .feature-description {
+.homepage .last-section .feature-four .feature-description {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  justify-content: none;
+  align-items: flex-start;
   flex-direction: column;
   max-width: 900px;
   margin: 0 auto;
   z-index: 1;
   position: relative;
-  padding-top: 20rem;
 }
-.homepage .feature-four .feature-description h2 {
+.homepage .last-section .feature-four .feature-description h2 {
   color: #fff;
   font-size: 2.5rem;
   font-weight: 500;
   width: 80%;
-  align-self: center;
-  text-align: center;
+  align-content: flex-start;
 }
-.homepage .feature-four .feature-description p {
+.homepage .last-section .feature-four .feature-description p {
   color: #fff;
   font-size: 1.8rem;
   width: 80%;
   padding-top: 2.5rem;
   line-height: 1.6;
-  align-self: center;
-  text-align: center;
+  align-content: flex-start;
 }
-.homepage .feature-four .win-image {
+.homepage .last-section .feature-four .win-image {
   z-index: 1;
   position: relative;
-  max-width: 900px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: right;
-  flex-direction: row;
-  margin-top: 2rem;
+  padding-right: 3rem;
+}
+.homepage .last-section .sign-up-button {
+  padding: 2.5rem;
+  width: 23rem;
+  margin-top: 8%;
+  border-radius: 1rem;
+  background-color: #F8FF34;
+  box-shadow: 2px 2px 15px rgba(250, 255, 153, 0.9), 2px 2px 6px rgba(0, 0, 0, 0.5);
+  border-style: none;
+  color: #1D1D1D;
+  font-size: 1.8rem;
+  position: relative;
 }
 * {
   box-sizing: border-box;
@@ -404,7 +497,16 @@ body .header-background {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
   position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+body .header-backgroundtwo {
+  height: 500px;
+  clip-path: polygon(0 0, 100% 80%, 100% 56%, 0 100%);
+  background-color: black;
+  padding-top: 0;
   z-index: 0;
+  position: absolute;
   width: 100%;
 }
 body .container {

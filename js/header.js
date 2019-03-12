@@ -1,9 +1,9 @@
 var words = [
-    "catch",
-    "win",
-    "find",
-    "track",
-    "know"
+    "CATCH",
+    "WIN",
+    "FIND",
+    "TRACK",
+    "KNOW"
 ];
 let i = 0;
 const ticker = document.getElementById("rotating-word");
