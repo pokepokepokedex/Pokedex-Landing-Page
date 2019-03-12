@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="16px" viewBox="0 0 18 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons/Solid/bars</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3.64285714,7.15625 L20.3571429,7.15625 C20.7122009,7.15625 21,6.87644531 21,6.53125 L21,4.96875 C21,4.62355469 20.7122009,4.34375 20.3571429,4.34375 L3.64285714,4.34375 C3.28779911,4.34375 3,4.62355469 3,4.96875 L3,6.53125 C3,6.87644531 3.28779911,7.15625 3.64285714,7.15625 Z M3.64285714,13.40625 L20.3571429,13.40625 C20.7122009,13.40625 21,13.1264453 21,12.78125 L21,11.21875 C21,10.8735547 20.7122009,10.59375 20.3571429,10.59375 L3.64285714,10.59375 C3.28779911,10.59375 3,10.8735547 3,11.21875 L3,12.78125 C3,13.1264453 3.28779911,13.40625 3.64285714,13.40625 Z M3.64285714,19.65625 L20.3571429,19.65625 C20.7122009,19.65625 21,19.3764453 21,19.03125 L21,17.46875 C21,17.1235547 20.7122009,16.84375 20.3571429,16.84375 L3.64285714,16.84375 C3.28779911,16.84375 3,17.1235547 3,17.46875 L3,19.03125 C3,19.3764453 3.28779911,19.65625 3.64285714,19.65625 Z" id="path-1"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Website" transform="translate(-1074.000000, -258.000000)">
+            <g id="Icons/Solid/bars" transform="translate(1071.000000, 254.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="bars" fill="#000000" fill-rule="nonzero" xlink:href="#path-1"></use>
+                <g id="Colors/5th" mask="url(#mask-2)" fill="#FFFFFF" fill-rule="evenodd">
+                    <rect id="Rectangle" x="0" y="0" width="24" height="24"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

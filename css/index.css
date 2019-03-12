@@ -177,7 +177,7 @@ footer .footer-nav-social-icons .footer-nav {
   width: 100%;
 }
 footer .footer-nav-social-icons .footer-nav .footer-links a {
-  margin-right: 2rem;
+  margin-left: 2rem;
   text-decoration: none;
   font-size: 1.25rem;
   color: white;
@@ -264,6 +264,14 @@ nav .links a:last-child {
   align-items: left;
   flex-direction: column;
 }
+@media (max-width: 800px) {
+  .homepage .feature-one .feature-description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
 .homepage .feature-one .feature-description h2 {
   color: #1D1D1D;
   font-size: 2.5rem;
@@ -331,10 +339,20 @@ nav .links a:last-child {
   width: 120%;
   z-index: 0;
 }
+@media (max-width: 800px) {
+  .homepage .feature-one .feature-description button {
+    margin-left: -5rem;
+  }
+}
 .homepage .feature-one img {
   height: auto;
   max-width: 80%;
   margin-right: -30rem;
+}
+@media (max-width: 800px) {
+  .homepage .feature-one img {
+    margin-right: -25rem;
+  }
 }
 .homepage .feature-two {
   display: flex;
@@ -440,6 +458,11 @@ nav .links a:last-child {
   height: 500px;
   margin-bottom: 200px;
 }
+@media (max-width: 800px) {
+  .homepage .feature-three {
+    height: 400px;
+  }
+}
 .homepage .feature-three .feature-description {
   display: flex;
   justify-content: space-between;
@@ -447,11 +470,21 @@ nav .links a:last-child {
   flex-direction: column;
   margin-top: -10rem;
 }
+@media (max-width: 800px) {
+  .homepage .feature-three .feature-description {
+    margin-top: 0rem;
+  }
+}
 .homepage .feature-three .feature-description h2 {
   color: #1D1D1D;
   font-size: 2.5rem;
   font-weight: 500;
   align-items: center;
+}
+@media (max-width: 800px) {
+  .homepage .feature-three .feature-description h2 {
+    width: 80%;
+  }
 }
 .homepage .feature-three .feature-description p {
   color: #1D1D1D;
@@ -461,12 +494,22 @@ nav .links a:last-child {
   line-height: 1.6;
   align-items: center;
 }
+@media (max-width: 800px) {
+  .homepage .feature-three .feature-description p {
+    width: 80%;
+  }
+}
 .homepage .feature-three img {
   max-width: 60%;
   width: 50%;
   margin-left: -2rem;
   margin-top: -10rem;
   height: auto;
+}
+@media (max-width: 800px) {
+  .homepage .feature-three img {
+    margin-top: 0;
+  }
 }
 .homepage .last-section {
   display: flex;
@@ -482,10 +525,7 @@ nav .links a:last-child {
   max-width: 900px;
   margin: 0 auto;
 }
-.homepage .last-section .feature-four:hover span {
-  color: #F8FF33;
-}
-.homepage .last-section .feature-four .background {
+.homepage .last-section .background {
   height: 600px;
   clip-path: polygon(0 0, 100% 20%, 100% 75%, 0 100%);
   background-color: #1D1D1D;
@@ -494,7 +534,12 @@ nav .links a:last-child {
   width: 100%;
   left: 0;
 }
-.homepage .last-section .feature-four .feature-description {
+@media (max-width: 800px) {
+  .homepage .last-section .background {
+    height: 500px;
+  }
+}
+.homepage .last-section .feature-description {
   display: flex;
   justify-content: none;
   align-items: flex-start;
@@ -504,14 +549,17 @@ nav .links a:last-child {
   z-index: 1;
   position: relative;
 }
-.homepage .last-section .feature-four .feature-description h2 {
+.homepage .last-section .feature-description h2 {
   color: #fff;
   font-size: 2.5rem;
   font-weight: 500;
   width: 80%;
   align-content: flex-start;
 }
-.homepage .last-section .feature-four .feature-description p {
+.homepage .last-section .feature-description h2 span {
+  color: #F8FF33;
+}
+.homepage .last-section .feature-description p {
   color: #fff;
   font-size: 1.8rem;
   width: 80%;
@@ -519,12 +567,12 @@ nav .links a:last-child {
   line-height: 1.6;
   align-content: flex-start;
 }
-.homepage .last-section .feature-four .win-image {
+.homepage .last-section .win-image {
   z-index: 1;
   position: relative;
   padding-right: 3rem;
 }
-.homepage .last-section .sign-up-button {
+.homepage .sign-up-button {
   padding: 2.5rem;
   width: 23rem;
   margin-top: 8%;
@@ -538,7 +586,7 @@ nav .links a:last-child {
   overflow: hidden;
   transition: 0.2s;
 }
-.homepage .last-section .sign-up-button:hover {
+.homepage .sign-up-button:hover {
   cursor: pointer;
   color: black;
   border-radius: 2rem;
