@@ -1,0 +1,135 @@
+
+
+.homepage {
+
+  //feature one 
+
+  .feature-one {
+   
+      .max-width-desktop; 
+      padding-top: 10rem;
+      padding-bottom: 5rem;
+
+      .flex(space-between, center, row);
+
+
+      .feature-description {
+          .flex(space-between, left, column);
+
+          h2 {
+              color: @pokestats-color-primary;
+              font-size: 2.5rem;
+              font-weight: 500;
+              position: relative;
+              
+              .arrow{
+                margin-bottom: 0.5rem;
+                z-index: 1;
+                stroke-dasharray: 2; 
+              }
+              
+              .arrow::before{
+                width: 0;
+              }
+              .arrow::after{
+                width: 100%;
+              }
+          }
+          p {
+              color: @pokestats-color-primary;
+              font-size: 1.8rem;
+              width: 70%;
+              padding-top: 2.5rem;
+              line-height: 1.6;
+          }
+
+          button{
+            padding: 2rem;
+            width: 20rem;
+            margin-top: 3rem;
+            border-radius: 1rem;
+            background-color: rgb(81, 215, 239);
+            box-shadow: 2px 2px 15px rgba(94, 255, 252, 0.8);
+            border-style: none;
+            color: white;
+            font-size: 1.4rem;
+          }
+      }
+
+      img {
+          height: auto; 
+          width: 80%;
+          margin-right: -20rem;
+          z-index: 2;
+        
+      }
+  }
+}
+
+
+
+  //feature two
+
+  .feature-two{
+    .flex(space-between, left, column);
+
+    .background{
+      height: 600px;
+      clip-path: polygon(0 0, 100% 20%, 100% 75%, 0 100%);
+      background-color: @pokestats-color-primary;
+      z-index: 0;
+      position: absolute;
+      width: 100%;
+      left: 0;
+    }
+
+    .feature-description {
+      .flex(space-between, center, column);
+      .max-width-desktop();
+      z-index: 1;
+      position: relative;
+      padding-top: 15%;
+
+
+      h2 {
+          color: @pokestats-color-white;
+          font-size: 2.5rem;
+          font-weight: 500;
+          width: 80%;
+          align-self: center;
+          text-align: center;
+      }
+      p {
+          color: @pokestats-color-white;
+          font-size: 1.8rem;
+          width: 80%;
+          padding-top: 2.5rem;
+          line-height: 1.6;
+          align-self: center;
+          text-align: center;
+
+      }
+    }
+    
+    .learn-images{
+      z-index: 1;
+      position: relative;
+      .max-width-desktop();
+      .flex(space-between, flex-start, row);
+      margin-top: 2rem;
+
+      .stats {
+        width: 40%;
+        height: 40%;
+        padding-top: 2rem;
+        margin-right: 15%;
+
+      }
+      .pikachu {
+        width: 40%;
+        height: 40%;
+
+       
+      }
+    }
+}
