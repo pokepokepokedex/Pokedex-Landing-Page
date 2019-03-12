@@ -32,10 +32,16 @@
                 color: @pokestats-color-primary;
                 font-size: 2.5rem;
                 font-weight: 500;
+    
 
                 .arrow{
                   margin-left: 5rem;
                   position: relative;
+
+
+                  @media @phone {
+                    display: none;
+                  }
 
                 }
                 
@@ -44,6 +50,10 @@
                   position: absolute;
                   margin-left: 30rem;
                   z-index:-1;
+
+                  @media @phone {
+                    display: none;
+                  }
                  
                 }
             }
@@ -54,6 +64,12 @@
                 width: 70%;
                 padding-top: 2.5rem;
                 line-height: 1.6;
+
+                @media @phone {
+                  text-align: center;
+                  width: 80%;
+                }
+               
             }
 
             // button {
@@ -81,6 +97,11 @@
                     font-size: 1.4rem;
                     position: relative;
                     overflow: hidden;
+
+                    @media @phone {
+                      margin-left: 0rem;
+                    }
+                   
 
                     span {
                         position: relative;
@@ -134,6 +155,16 @@
             @media @tablet{
               margin-right: -25rem;
             }
+
+            @media @phone {
+              margin: 0 auto;
+              padding-bottom: 4rem;
+            }
+        }
+
+        @media @phone {
+          .flex(center, center, column-reverse);
+          padding-top: 5rem;
         }
 
     }
@@ -141,10 +172,9 @@
     // Feature 2 - Learn about Pokemon
     .feature-two{
         .flex(space-between, left, column);
-
-    
+      
         .background{
-          height: 700px;
+          height: 600px;
           clip-path: polygon(0 0, 100% 10%, 100% 80%, 0 100%);
           background-color: @pokestats-color-primary;
           z-index: 0;
@@ -152,10 +182,10 @@
           width: 100%;
           left: 0;
           
-          &:hover {
-            span {
-              color: @pokestats-color-yellow;
-            }
+          @media @phone{
+            height: 700px;
+            z-index: -1;
+            clip-path: polygon(0 0, 100% 10%, 100% 100%, 0 100%);
           }
         }
     
@@ -187,6 +217,10 @@
               line-height: 1.6;
               align-self: center;
               text-align: center;
+
+              @media @phone{
+                font-size: 1.5rem;
+              }
     
           }
         }
@@ -203,6 +237,10 @@
             height: 40%;
             padding-top: 5rem;
             margin-right: 10%;
+
+            @media @phone{
+              display: none;
+            }
     
           }
           .pikachu-group{
@@ -214,12 +252,20 @@
             .arrow{
               position: absolute;
               margin-left: -15rem;
+
+              @media @phone{
+                display: none;
+              }
             }
 
             .circle{
               position:absolute; 
               margin-left: -22.5rem;
               margin-bottom: 5rem;
+
+              @media @phone{
+                display: none;
+              }
             }
 
             .pikachu{
@@ -227,6 +273,12 @@
               height: 80%;
               z-index: 3;
               margin-left: 10rem;
+
+              @media @phone{
+                width: 50%;
+                height: 50%;
+                margin-left: 5rem;
+              }
             }
             .shadow{
               z-index:2;
@@ -234,10 +286,17 @@
               width: 100%;
               margin-top: -9rem;
 
+              @media @phone{
+                display: none;
+              }
             }
     
           }
         }
+        @media @phone {
+          .flex(center, center, column-reverse);
+        }
+    
     }
 
     // Feature 3 - Track Pokemon
@@ -253,12 +312,22 @@
           height: 400px;
         }
 
+        @media @phone {
+          .flex(center, center, column);
+          height: 500px;
+        }
+
         .feature-description {
             .flex(space-between, flex-end, column);
             margin-top: -10rem;
 
             @media @tablet {
               margin-top: 0rem;
+            }
+
+            @media @phone {
+              margin-top: 15rem;
+              .flex(center, center, column);
             }
             
 
@@ -270,6 +339,10 @@
 
                 @media @tablet {
                   width: 80%;
+                }
+
+                @media @phone {
+                  text-align: center;
                 }
             }
 
@@ -283,6 +356,10 @@
 
                 @media @tablet {
                   width: 80%;
+                }
+
+                @media @phone {
+                  text-align: center;
                 }
             }
 
@@ -300,6 +377,11 @@
               margin-top: 0;
             }
 
+            @media @phone {
+              margin-top: 12rem;
+              width:70%;
+            }
+
         }
 
     }
@@ -307,11 +389,16 @@
     // Feature 4 - Win Pokemon Battles
     .last-section {
         .flex(center, center, column);
+
         .feature-four {
             .flex(space-between, center, row-reverse);
             .max-width-desktop();
 
+            @media @phone{
+              .flex(center, center, column-reverse);
             }
+            }
+
         
             .background{
               height: 600px;
@@ -325,6 +412,11 @@
               @media @tablet {
                 height: 500px;
               }
+
+              @media @phone {
+                clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
+                height: 600px;
+              }
             }
         
             .feature-description {
@@ -332,7 +424,10 @@
               .max-width-desktop();
               z-index: 1;
               position: relative;
-        
+
+              @media @phone{
+                .flex(center, center, column);
+              }
         
               h2 {
                   color: @pokestats-color-white;
@@ -343,6 +438,11 @@
                   span{
                     color: @pokestats-color-yellow;
                   }
+
+                  @media @phone{
+                    margin-top: 5rem;
+                    text-align: center;
+                  }
               }
               p {
                   color: @pokestats-color-white;
@@ -351,7 +451,10 @@
                   padding-top: 2.5rem;
                   line-height: 1.6;
                   align-content: flex-start;
-        
+
+                  @media @phone{
+                    text-align: center;
+                  }
               }
             }
             
@@ -359,6 +462,7 @@
               z-index: 1;
               position: relative;
               padding-right: 3rem;
+
             }
         
         }
