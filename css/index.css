@@ -159,7 +159,7 @@ footer {
   align-items: space-between;
   flex-direction: column;
   padding-top: 3rem;
-  background: #1D1D1D;
+  background: black;
   margin-top: 8rem;
   width: 100%;
   height: 12rem;
@@ -201,8 +201,6 @@ footer .footer-nav-social-icons .social-icons .yellow-icon {
 footer .copyright {
   max-width: 900px;
   margin: 0 auto;
-  width: 26.6%;
-  text-align: right;
   margin-top: 3.5rem;
   font-size: 0.8rem;
   color: white;
@@ -320,8 +318,8 @@ nav .links a:last-child {
   flex-direction: column;
 }
 .homepage .feature-two .background {
-  height: 600px;
-  clip-path: polygon(0 0, 100% 20%, 100% 75%, 0 100%);
+  height: 700px;
+  clip-path: polygon(0 0, 100% 20%, 100% 80%, 0 100%);
   background-color: #1D1D1D;
   z-index: 0;
   position: absolute;
@@ -370,12 +368,25 @@ nav .links a:last-child {
 .homepage .feature-two .learn-images .stats {
   width: 40%;
   height: 40%;
-  padding-top: 2rem;
-  margin-right: 15%;
+  padding-top: 5rem;
+  margin-right: 10%;
 }
-.homepage .feature-two .learn-images .pikachu {
-  width: 40%;
-  height: 40%;
+.homepage .feature-two .learn-images .pikachu-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.homepage .feature-two .learn-images .pikachu-group .pikachu {
+  width: 80%;
+  height: 80%;
+  z-index: 3;
+  margin-left: 10rem;
+}
+.homepage .feature-two .learn-images .pikachu-group .shadow {
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  margin-top: -9rem;
 }
 .homepage .feature-three {
   padding-bottom: 5rem;
@@ -477,6 +488,13 @@ nav .links a:last-child {
   color: #1D1D1D;
   font-size: 1.8rem;
   position: relative;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.homepage .last-section .sign-up-button:hover {
+  cursor: pointer;
+  color: black;
+  border-radius: 2rem;
 }
 * {
   box-sizing: border-box;
