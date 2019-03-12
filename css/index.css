@@ -156,35 +156,48 @@ header h2 .main-word .word-showing {
 footer {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
-  flex-direction: row;
+  align-items: none;
+  flex-direction: column;
+  padding-top: 2rem;
   background: #1D1D1D;
   margin-top: 5rem;
   width: 100%;
   height: 8rem;
 }
-footer nav {
+footer .footer-nav-social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+footer .footer-nav-social-icons nav {
   width: 70%;
 }
-footer nav .links a {
+footer .footer-nav-social-icons nav .links a {
   text-decoration: none;
-  margin-left: 1rem;
   font-size: 1.25rem;
   color: white;
 }
-footer nav .links a:last-child {
+footer .footer-nav-social-icons nav .links a:last-child {
   color: #F8FF33;
 }
-footer .social-icons {
+footer .footer-nav-social-icons .social-icons {
   width: 30%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
 }
-footer .social-icons img {
+footer .footer-nav-social-icons .social-icons img {
   width: 40%;
   height: auto;
+}
+footer .copyright {
+  width: 26.6%;
+  text-align: right;
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: white;
 }
 nav {
   display: flex;
