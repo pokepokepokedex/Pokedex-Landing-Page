@@ -156,35 +156,38 @@ header h2 .main-word .word-showing {
 footer {
   display: flex;
   justify-content: flex-start;
-  align-items: none;
+  align-items: space-between;
   flex-direction: column;
-  padding-top: 2rem;
+  padding-top: 3rem;
   background: #1D1D1D;
-  margin-top: 5rem;
+  margin-top: 8rem;
   width: 100%;
-  height: 8rem;
+  height: 12rem;
 }
 footer .footer-nav-social-icons {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
 }
-footer .footer-nav-social-icons nav {
-  width: 70%;
+footer .footer-nav-social-icons .footer-nav {
+  width: 100%;
 }
-footer .footer-nav-social-icons nav .links a {
+footer .footer-nav-social-icons .footer-nav .footer-links a {
+  margin-right: 2rem;
   text-decoration: none;
   font-size: 1.25rem;
   color: white;
 }
-footer .footer-nav-social-icons nav .links a:last-child {
+footer .footer-nav-social-icons .footer-nav .footer-links a:last-child {
   color: #F8FF33;
 }
 footer .footer-nav-social-icons .social-icons {
-  width: 30%;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: row;
 }
@@ -192,10 +195,15 @@ footer .footer-nav-social-icons .social-icons img {
   width: 40%;
   height: auto;
 }
+footer .footer-nav-social-icons .social-icons .yellow-icon {
+  display: none;
+}
 footer .copyright {
+  max-width: 900px;
+  margin: 0 auto;
   width: 26.6%;
   text-align: right;
-  margin-top: 1rem;
+  margin-top: 3.5rem;
   font-size: 0.8rem;
   color: white;
 }
