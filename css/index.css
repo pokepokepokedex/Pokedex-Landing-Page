@@ -232,8 +232,14 @@ nav .links a {
 nav .links a:last-child {
   color: #F8FF33;
 }
+.homepage .water-icon {
+  height: 5%;
+  position: absolute;
+  margin-top: 5%;
+  margin-left: 5%;
+}
 .homepage .feature-one {
-  padding-top: 10rem;
+  padding-top: 15rem;
   padding-bottom: 5rem;
   display: flex;
   justify-content: space-between;
@@ -241,6 +247,10 @@ nav .links a:last-child {
   flex-direction: row;
   max-width: 900px;
   margin: 0 auto;
+}
+.homepage .feature-one:hover .circle {
+  transition: all 1s ease-in;
+  transform: translateX(-300px);
 }
 .homepage .feature-one .feature-description {
   display: flex;
@@ -252,6 +262,15 @@ nav .links a:last-child {
   color: #1D1D1D;
   font-size: 2.5rem;
   font-weight: 500;
+}
+.homepage .feature-one .feature-description h2 .arrow {
+  margin-left: 5rem;
+  position: relative;
+}
+.homepage .feature-one .feature-description h2 .circle {
+  position: absolute;
+  margin-left: 30rem;
+  z-index: -1;
 }
 .homepage .feature-one .feature-description p {
   color: #1D1D1D;
@@ -308,8 +327,8 @@ nav .links a:last-child {
 }
 .homepage .feature-one img {
   height: auto;
-  max-width: 60%;
-  margin-right: -20rem;
+  max-width: 80%;
+  margin-right: -30rem;
 }
 .homepage .feature-two {
   display: flex;
@@ -396,12 +415,13 @@ nav .links a:last-child {
   flex-direction: row;
   max-width: 900px;
   margin: 0 auto;
-  height: 700px;
+  height: 500px;
+  margin-bottom: 200px;
 }
 .homepage .feature-three .feature-description {
   display: flex;
   justify-content: space-between;
-  align-items: left;
+  align-items: flex-end;
   flex-direction: column;
   margin-top: -15rem;
 }
@@ -421,7 +441,8 @@ nav .links a:last-child {
 }
 .homepage .feature-three img {
   max-width: 60%;
-  width: 20%;
+  width: 50%;
+  margin-left: -5rem;
   height: auto;
 }
 .homepage .last-section {
