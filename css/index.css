@@ -245,13 +245,7 @@ nav .logo p {
 }
 @media (max-width: 500px) {
   nav .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 0 auto;
-    z-index: 2;
-    position: relative;
+    display: none;
   }
 }
 nav .links a {
@@ -283,12 +277,7 @@ nav .mobile-menu-btn {
 }
 @media (max-width: 500px) {
   nav {
-    position: sticky;
-    top: 0;
-    margin: -2rem -3rem 3rem -3rem;
-    background-color: #1D1D1D;
-    z-index: 10;
-    padding: 1rem 3rem 1rem 3rem;
+    display: none;
   }
 }
 .homepage .water-icon {
@@ -793,20 +782,52 @@ nav .mobile-menu-btn {
   color: black;
   border-radius: 2rem;
 }
-.mobile-menu .mobile-menu-btn {
-  margin-left: 3rem;
-  margin-top: 2rem;
-  z-index: 15;
-  position: relative;
+.mobile-menu {
   display: none;
 }
 @media (max-width: 500px) {
-  .mobile-menu .mobile-menu-btn {
+  .mobile-menu {
+    display: block;
+  }
+}
+.mobile-menu .mobile-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #1D1D1D;
+  z-index: 10;
+  padding: 1rem 3rem 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.mobile-menu .mobile-nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.mobile-menu .mobile-nav .logo p {
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 1rem;
+}
+.mobile-menu .mobile-nav .mobile-menu-btn {
+  z-index: 15;
+  display: none;
+}
+.mobile-menu .mobile-nav .mobile-menu-btn img {
+  align-self: center;
+}
+@media (max-width: 500px) {
+  .mobile-menu .mobile-nav .mobile-menu-btn {
     display: block;
   }
 }
 .mobile-menu .mobile-menu-content {
   position: absolute;
+  position: fixed;
   width: 40%;
   z-index: 2;
   cursor: pointer;
@@ -828,7 +849,7 @@ nav .mobile-menu-btn {
   margin-left: 2rem;
   margin-top: 3rem;
 }
-.mobile-menu .mobile-menu-content:last-child {
+s .mobile-menu .mobile-menu-content:last-child {
   color: #F8FF33;
 }
 .mobile-menu .mobile-menu-hidden {

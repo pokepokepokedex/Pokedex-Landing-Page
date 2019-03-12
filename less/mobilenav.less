@@ -1,19 +1,43 @@
 .mobile-menu{
+  display: none; 
+  @media @phone{
+    display:block;
+  }
+    .mobile-nav{
+      width: 100%; 
+      position: fixed;
 
-    .mobile-menu-btn {
-      margin-left: 3rem;
-      margin-top: 2rem;
-      z-index: 15;
-      position: relative;
-      display: none; 
-      @media @phone{
-        display:block;
+      top: 0;
+      background-color: @pokestats-color-primary;
+      z-index: 10;
+      padding: 1rem 3rem 1rem 3rem;
+      .flex(space-between, center, row);
+
+      .logo{
+        .flex(center, center, row);
+        p{
+          font-size:1.5rem;
+          color: white;
+          margin-left: 1rem;
+        }
+      }
+      .mobile-menu-btn {
+        z-index: 15;
+        display: none; 
+
+      img {
+        align-self: center;
+      }
+        @media @phone{
+          display:block;
+        }
       }
     }
 
     .mobile-menu-content{
       z-index: 2;
       position: absolute;
+      position: fixed;
       width: 40%;
       z-index: 2;
       cursor: pointer;  
@@ -32,7 +56,7 @@
         margin-top: 3rem;
       }
 
-
+s
     &:last-child {
       color: @pokestats-color-yellow;
     }
