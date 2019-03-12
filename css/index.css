@@ -394,6 +394,16 @@ nav .links a:last-child {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+}
+.homepage .feature-two .learn-images .pikachu-group .arrow {
+  position: absolute;
+  margin-left: -15rem;
+}
+.homepage .feature-two .learn-images .pikachu-group .circle {
+  position: absolute;
+  margin-left: -22.5rem;
+  margin-bottom: 5rem;
 }
 .homepage .feature-two .learn-images .pikachu-group .pikachu {
   width: 80%;

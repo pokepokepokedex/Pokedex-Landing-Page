@@ -14,12 +14,9 @@
         .max-width-desktop();
             &:hover{
               .circle{
+                
                 transition: all 1s ease-in;
                 transform: translateX(-300px);
-              }
-
-              img{
-
               }
             }
 
@@ -35,12 +32,15 @@
                 .arrow{
                   margin-left: 5rem;
                   position: relative;
+
                 }
                 
                 .circle {
+ 
                   position: absolute;
                   margin-left: 30rem;
                   z-index:-1;
+                 
                 }
             }
 
@@ -123,6 +123,7 @@
             height: auto;
             max-width: 80%;
             margin-right: -30rem;
+
         }
 
     }
@@ -130,6 +131,7 @@
     // Feature 2 - Learn about Pokemon
     .feature-two{
         .flex(space-between, left, column);
+
     
         .background{
           height: 700px;
@@ -187,6 +189,18 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            position: relative;
+
+            .arrow{
+              position: absolute;
+              margin-left: -15rem;
+            }
+
+            .circle{
+              position:absolute; 
+              margin-left: -22.5rem;
+              margin-bottom: 5rem;
+            }
 
             .pikachu{
               width: 80%;
