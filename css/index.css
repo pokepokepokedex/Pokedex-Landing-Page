@@ -464,7 +464,7 @@ nav .links a:last-child {
   margin-top: 8%;
   border-radius: 1rem;
   background-color: #F8FF34;
-  box-shadow: 2px 2px 15px rgba(250, 255, 153, 0.8);
+  box-shadow: 2px 2px 15px rgba(250, 255, 153, 0.9), 2px 2px 6px rgba(0, 0, 0, 0.2);
   border-style: none;
   color: #1D1D1D;
   font-size: 1.8rem;
