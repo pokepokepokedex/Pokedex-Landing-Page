@@ -8,7 +8,7 @@
 // Feature 1 - Find Any Pokemon
     .feature-one {
         // position: relative;
-        padding-top: 15rem;
+        padding-top: 10rem;
         padding-bottom: 5rem;
         .flex(space-between, center, row);
         .max-width-desktop();
@@ -141,6 +141,12 @@
           position: absolute;
           width: 100%;
           left: 0;
+          
+          &:hover {
+            span {
+              color: @pokestats-color-yellow;
+            }
+          }
         }
     
         .feature-description {
@@ -158,6 +164,10 @@
               width: 80%;
               align-self: center;
               text-align: center;
+              
+              span {
+                color: yellow;
+              }
           }
           p {
               color: @pokestats-color-white;
@@ -270,6 +280,8 @@
         .feature-four {
             .flex(space-between, center, row-reverse);
             .max-width-desktop();
+
+            }
         
             .background{
               height: 600px;
@@ -294,6 +306,9 @@
                   font-weight: 500;
                   width: 80%;
                   align-content: flex-start;
+                  span{
+                    color: @pokestats-color-yellow;
+                  }
               }
               p {
                   color: @pokestats-color-white;

@@ -245,7 +245,7 @@ nav .links a:last-child {
   margin-left: 5%;
 }
 .homepage .feature-one {
-  padding-top: 15rem;
+  padding-top: 10rem;
   padding-bottom: 5rem;
   display: flex;
   justify-content: space-between;
@@ -351,6 +351,9 @@ nav .links a:last-child {
   width: 100%;
   left: 0;
 }
+.homepage .feature-two .background:hover span {
+  color: #F8FF33;
+}
 .homepage .feature-two .feature-description {
   display: flex;
   justify-content: space-between;
@@ -369,6 +372,9 @@ nav .links a:last-child {
   width: 80%;
   align-self: center;
   text-align: center;
+}
+.homepage .feature-two .feature-description h2 span {
+  color: yellow;
 }
 .homepage .feature-two .feature-description p {
   color: #fff;
@@ -475,6 +481,9 @@ nav .links a:last-child {
   flex-direction: row-reverse;
   max-width: 900px;
   margin: 0 auto;
+}
+.homepage .last-section .feature-four:hover span {
+  color: #F8FF33;
 }
 .homepage .last-section .feature-four .background {
   height: 600px;
