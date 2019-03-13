@@ -856,7 +856,7 @@ nav .mobile-menu-btn {
   margin-left: 2rem;
   margin-top: 3rem;
 }
-s .mobile-menu .mobile-menu-content:last-child {
+.mobile-menu .mobile-menu-content a:last-child {
   color: #F8FF33;
 }
 .mobile-menu .mobile-menu-hidden {
@@ -1659,6 +1659,12 @@ s .mobile-menu .mobile-menu-content:last-child {
 @media (max-width: 500px) {
   .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content p {
     font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content #squirtle-content {
+    margin-bottom: 12rem;
+    font-size: 1.34rem;
   }
 }
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content #mewtwo {
