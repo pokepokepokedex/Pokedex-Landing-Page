@@ -199,6 +199,11 @@ footer .footer-nav-social-icons .footer-nav .footer-links a {
   font-size: 1.25rem;
   color: white;
 }
+@media (max-width: 500px) {
+  footer .footer-nav-social-icons .footer-nav .footer-links a {
+    margin-left: 1.5rem;
+  }
+}
 footer .footer-nav-social-icons .footer-nav .footer-links a:last-child {
   color: #F8FF33;
 }
@@ -1530,15 +1535,6 @@ s .mobile-menu .mobile-menu-content:last-child {
     margin-bottom: -5rem;
   }
 }
-.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #mewtwo {
-  height: 37rem;
-  margin-top: -3rem;
-}
-@media (max-width: 800px) {
-  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #mewtwo {
-    height: 30rem;
-  }
-}
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #jigglypuff {
   height: 25rem;
   margin-right: 5rem;
@@ -1550,7 +1546,7 @@ s .mobile-menu .mobile-menu-content:last-child {
 }
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images .background {
   z-index: -1;
-  height: 100rem;
+  height: 90rem;
   position: absolute;
   margin-top: -60rem;
   margin-left: 0;
@@ -1585,7 +1581,7 @@ s .mobile-menu .mobile-menu-content:last-child {
   margin-right: 0;
   margin-top: -14rem;
   border-radius: 10px;
-  margin-left: 5rem;
+  margin-left: 4rem;
   padding: 10px;
   padding-top: 1rem;
   padding-bottom: 3rem;
@@ -1624,12 +1620,22 @@ s .mobile-menu .mobile-menu-content:last-child {
 }
 @media (max-width: 500px) {
   .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content p {
-    margin-top: -6rem;
+    margin-top: -8rem;
     text-align: center;
     align-self: center;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: 100%;
     vertical-align: middle;
+  }
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content #mewtwo {
+  height: 20rem;
+  margin-top: -12rem;
+}
+@media (max-width: 800px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content #mewtwo {
+    height: 18rem;
+    margin-top: -2rem;
   }
 }
 .featured-main-container .featured-pokemon .character-items .pokemon-slide-selected {
