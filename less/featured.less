@@ -5,16 +5,14 @@
     @media @phone{
       height: 30rem;
     }
+    clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    position: absolute;
+    z-index: -1;
+    width: 100%;
 
-
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-  position: absolute;
-  z-index: -1;
-  width: 100%;
-
-  @media @phone{
-    height: 40rem;
-  }
+    @media @phone{
+        height: 40rem;
+    }
 }
 
 .features{
@@ -35,7 +33,6 @@
         height: 10rem;
         width: 80rem;
         margin: 0 auto;
-        // border: .5px solid @pokestats-color-grey;
         border-radius: 20px;
 
         @media @tablet{

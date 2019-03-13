@@ -1,3 +1,20 @@
+header {
+    h1 {
+        @media @phone{
+            display: block;
+            margin-top: 5rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+    }
+
+    h2 {
+        @media @phone{
+            display: none;
+        }  
+    }
+}
+
 .about-section-main {
     margin-top: 6rem;
     .flex(none, none, column);
