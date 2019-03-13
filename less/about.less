@@ -1,9 +1,27 @@
+header {
+    h1 {
+        @media @phone{
+            display: block;
+            margin-top: 5rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+    }
+
+    h2 {
+        @media @phone{
+            display: none;
+        }  
+    }
+}
+
 .about-section-main {
     margin-top: 6rem;
     .flex(none, none, column);
     .about-top-section {
         margin-left: 2rem;
         margin-right: 2rem;
+
         .team-members {
             .flex(space-around, none, row);
 
@@ -11,12 +29,14 @@
                 .flex(flex-start, flex-start, column);
                 width: 100%;
                 padding-top: 3rem;
+                margin-top: 4rem;
             }
 
             @media @phone {
                 .flex(center, center, column);
                 width: 100%;
                 padding-top: 3rem;
+                margin-top: 8rem;
             }
             .member-content {
                 padding-top: 2rem;
@@ -30,16 +50,67 @@
 
                     @media @tablet {
                         font-size: 2rem;
+                        text-align: center;
+                        // margin-left: 2rem;
 
                     }
 
                     @media @phone {
                         font-size: 1.6rem;
+                        line-height: 1.6;
+                        text-align: center;
+                        // margin-left: 2rem;
 
                     }
                 }
 
-            }
+                .social {
+                    .flex(none, center, row);
+                    @media @tablet {
+                        .flex(center, center, row);
+                    }
+                    a.social-text {
+                        display:none; 
+
+                        @media @phone {
+                            display: block;
+                            margin-left: 1rem;
+                            font-size: 1.6rem;
+                            font-weight: 500;
+                            text-decoration: none;
+                            color: rgb(11, 111, 111);
+
+                            &:hover {
+                            transform: scale(1.2, 1.2);
+                            transition: ease-in-out;
+                            }
+                        }
+                    }
+                    img {
+                        margin-left: 1rem;
+                        width: 18px;
+                        height: 18px;
+
+                        &:hover{
+                            transform: scale(1.2, 1.2);
+                            transition: ease-in-out;
+                        }
+
+                        @media @tablet {
+                            width: 30px;
+                        height: 30px;
+                        margin-left: 2rem;
+                        }
+
+                        @media @phone {
+                            display: none;
+                        }
+    
+                    }
+
+                }
+
+            } // Team members description styling for all of row 1 of team members.
 
             .member-1 {
                 @media @tablet {
@@ -62,7 +133,7 @@
                     &:hover {
                         background-image: url('../img/ben.png');
                         box-shadow: 2px 5px 15px rgba(152, 36, 127, 0.9),
-            2px 5px 15px rgba(255, 255, 5, 0.8);
+                        2px 5px 15px rgba(255, 255, 5, 0.8);
                     }
 
                     @media @tablet {
@@ -96,7 +167,7 @@
                     &:hover {
                         background-image: url('../img/javontay.png');
                         box-shadow: 2px 5px 15px rgba(158, 36, 41, 0.9),
-            2px 5px 15px rgba(215, 111, 44, 0.8);
+                         2px 5px 15px rgba(215, 111, 44, 0.8);
                     }
 
                     @media @tablet {
@@ -128,7 +199,7 @@
                     &:hover {
                         background-image: url('../img/brandon.png');
                         box-shadow: 2px 5px 15px rgba(158, 36, 41, 0.9),
-            2px 5px 15px rgba(215, 111, 44, 0.8);
+                        2px 5px 15px rgba(215, 111, 44, 0.8);
                     }
 
                     @media @tablet {
@@ -160,7 +231,7 @@
                     &:hover {
                         background-image: url('../img/cj.jpeg');
                         box-shadow: 2px 5px 15px rgba(101, 173, 220, 0.9),
-            2px 5px 15px rgba(147, 181, 216, 0.8);
+                        2px 5px 15px rgba(147, 181, 216, 0.8);
                     }
 
                     @media @tablet {
@@ -172,7 +243,7 @@
             }
 
         }
-    }
+    } // About top-half section containing 1st row of memebers. 
 
     .about-bottom-section {
         margin-top: 3rem;
@@ -189,29 +260,72 @@
                 .flex(center, center, column);
             }
 
+            .member-content {
+                padding-top: 2rem;
+                margin-left: 1rem;
 
-            .member-5 {
+                p {
+                    color: @pokestats-color-primary;
+                    font-size: 1.2rem;
+                    line-height: 1.8;
+                    text-align: left;
 
-                .member-content {
+                    @media @tablet {
+                        font-size: 2rem;
+                        text-align: center;
+                    
 
-                    p {
-                        color: @pokestats-color-primary;
-                        font-size: 1.2rem;
-                        line-height: 1.8;
-                        text-align: left;
-    
-                        @media @tablet {
-                            font-size: 2rem;
-    
+                    }
+
+                    @media @phone {
+                        font-size: 1.6rem;
+                        line-height: 1.6;
+                        text-align: center;
+                    
+
+                    }
+                }
+
+                .social {
+                    .flex(none, center, row);
+                    a.social-text {
+                        display:none; 
+
+                        @media @phone {
+                            display: block;
+                            margin-left: 1rem;
+                            font-size: 1.6rem;
+                            text-decoration: none;
+                            font-weight: 500;
+                            color: rgb(11, 111, 111);
+
+                            &:hover {
+                            transform: scale(1.2, 1.2);
+                            transition: ease-in-out;
+                            }
+                        }
+                    }
+                    img {
+                        margin-left: 1rem;
+                        width: 18px;
+                        height: 18px;
+
+                        &:hover{
+                            transform: scale(1.2, 1.2);
+                            transition: ease-in-out;
                         }
 
                         @media @phone {
-                            font-size: 1.6rem;
-    
+                            display: none;
                         }
                     }
-    
+
+
                 }
+
+            } // Team members description styling for all of row 2 of team members.
+
+            .member-5 {
 
                 @media @tablet {
                     .flex(space-around, center, row);
@@ -232,7 +346,7 @@
                     &:hover {
                         background-image: url('../img/quinn.jpeg');
                         box-shadow: 2px 5px 15px rgba(221, 149, 48, 0.9),
-            2px 5px 15px rgba(255, 215, 98, 0.8);
+                        2px 5px 15px rgba(255, 215, 98, 0.8);
                     }
 
                     @media @tablet {
@@ -244,27 +358,6 @@
             }
 
             .member-6 {
-
-                .member-content {
-
-                    p {
-                        color: @pokestats-color-primary;
-                        font-size: 1.2rem;
-                        line-height: 1.8;
-                        text-align: left;
-    
-                        @media @tablet {
-                            font-size: 2rem;
-    
-                        }
-
-                        @media @phone {
-                            font-size: 1.6rem;
-    
-                        }
-                    }
-    
-                }
 
                 @media @tablet {
                     .flex(space-around, center, row);
@@ -286,7 +379,7 @@
                     &:hover {
                         background-image: url('../img/rudy.png');
                         box-shadow: 2px 5px 15px rgba(152, 36, 127, 0.9),
-            2px 5px 15px rgba(255, 255, 5, 0.8);
+                        2px 5px 15px rgba(255, 255, 5, 0.8);
                     }
 
                     @media @tablet {
@@ -298,27 +391,6 @@
             }
 
             .member-7 {
-
-                .member-content {
-
-                    p {
-                        color: @pokestats-color-primary;
-                        font-size: 1.2rem;
-                        line-height: 1.8;
-                        text-align: left;
-    
-                        @media @tablet {
-                            font-size: 2rem;
-    
-                        }
-
-                        @media @phone {
-                            font-size: 1.6rem;
-    
-                        }
-                    }
-    
-                }
 
                 @media @tablet {
                     .flex(space-around, center, row);
@@ -340,7 +412,7 @@
                     &:hover {
                         background-image: url('../img/erica.png');
                         box-shadow: 2px 5px 15px rgba(101, 173, 220, 0.9),
-            2px 5px 15px rgba(147, 181, 216, 0.8);
+                        2px 5px 15px rgba(147, 181, 216, 0.8);
                     }
 
                     @media @tablet {
@@ -353,27 +425,6 @@
             }
 
             .member-8 {
-
-                .member-content {
-
-                    p {
-                        color: @pokestats-color-primary;
-                        font-size: 1.2rem;
-                        line-height: 1.8;
-                        text-align: left;
-    
-                        @media @tablet {
-                            font-size: 2rem;
-    
-                        }
-
-                        @media @phone {
-                            font-size: 1.6rem;
-    
-                        }
-                    }
-    
-                }
 
                 @media @tablet {
                     .flex(space-around, center, row);
@@ -395,7 +446,7 @@
                     &:hover {
                         background-image: url('../img/trish.png');
                         box-shadow: 2px 5px 15px rgba(76, 134, 136, 0.8), 
-            2px 5px 15px rgba(238, 204, 135, 0.9);
+                        2px 5px 15px rgba(238, 204, 135, 0.9);
                     }
 
                     @media @tablet {
@@ -405,31 +456,7 @@
                 }
 
             }
-
-
-
-
-
-            .member-content {
-                padding-top: 2rem;
-                margin-left: 1rem;
-                p {
-                    color: @pokestats-color-primary;
-                    font-size: 1.2rem;
-                    line-height: 1.8;
-                    text-align: left;
-                }
-
-            }
-
-            img {
-                border-radius: 50%;
-                width: 70%;
-                height: auto;
-                background: white;
-                box-shadow:  2px 2px 6px rgba(0, 0, 0, 0.5);
-            }
         }
-    }
+    } // About bottom-half section containing 2nd row of memebers. 
 
-}
+} // Full about section container styling 

@@ -199,6 +199,11 @@ footer .footer-nav-social-icons .footer-nav .footer-links a {
   font-size: 1.25rem;
   color: white;
 }
+@media (max-width: 500px) {
+  footer .footer-nav-social-icons .footer-nav .footer-links a {
+    margin-left: 1.5rem;
+  }
+}
 footer .footer-nav-social-icons .footer-nav .footer-links a:last-child {
   color: #F8FF33;
 }
@@ -312,6 +317,7 @@ nav .mobile-menu-btn {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 9rem;
   }
 }
 .homepage .feature-one .feature-description h2 {
@@ -826,6 +832,7 @@ nav .mobile-menu-btn {
   }
 }
 .mobile-menu .mobile-menu-content {
+  margin-top: 6rem;
   position: absolute;
   position: fixed;
   width: 40%;
@@ -849,11 +856,24 @@ nav .mobile-menu-btn {
   margin-left: 2rem;
   margin-top: 3rem;
 }
-s .mobile-menu .mobile-menu-content:last-child {
+.mobile-menu .mobile-menu-content a:last-child {
   color: #F8FF33;
 }
 .mobile-menu .mobile-menu-hidden {
   display: none;
+}
+@media (max-width: 500px) {
+  header h1 {
+    display: block;
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  header h2 {
+    display: none;
+  }
 }
 .about-section-main {
   margin-top: 6rem;
@@ -880,6 +900,7 @@ s .mobile-menu .mobile-menu-content:last-child {
     flex-direction: column;
     width: 100%;
     padding-top: 3rem;
+    margin-top: 4rem;
   }
 }
 @media (max-width: 500px) {
@@ -890,6 +911,7 @@ s .mobile-menu .mobile-menu-content:last-child {
     flex-direction: column;
     width: 100%;
     padding-top: 3rem;
+    margin-top: 8rem;
   }
 }
 .about-section-main .about-top-section .team-members .member-content {
@@ -905,11 +927,66 @@ s .mobile-menu .mobile-menu-content:last-child {
 @media (max-width: 800px) {
   .about-section-main .about-top-section .team-members .member-content p {
     font-size: 2rem;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
   .about-section-main .about-top-section .team-members .member-content p {
     font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+.about-section-main .about-top-section .team-members .member-content .social {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .about-section-main .about-top-section .team-members .member-content .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+.about-section-main .about-top-section .team-members .member-content .social a.social-text {
+  display: none;
+}
+@media (max-width: 500px) {
+  .about-section-main .about-top-section .team-members .member-content .social a.social-text {
+    display: block;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0b6f6f;
+  }
+  .about-section-main .about-top-section .team-members .member-content .social a.social-text:hover {
+    transform: scale(1.2, 1.2);
+    transition: ease-in-out;
+  }
+}
+.about-section-main .about-top-section .team-members .member-content .social img {
+  margin-left: 1rem;
+  width: 18px;
+  height: 18px;
+}
+.about-section-main .about-top-section .team-members .member-content .social img:hover {
+  transform: scale(1.2, 1.2);
+  transition: ease-in-out;
+}
+@media (max-width: 800px) {
+  .about-section-main .about-top-section .team-members .member-content .social img {
+    width: 30px;
+    height: 30px;
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-section-main .about-top-section .team-members .member-content .social img {
+    display: none;
   }
 }
 @media (max-width: 800px) {
@@ -1059,20 +1136,64 @@ s .mobile-menu .mobile-menu-content:last-child {
     flex-direction: column;
   }
 }
-.about-section-main .about-bottom-section .team-members .member-5 .member-content p {
+.about-section-main .about-bottom-section .team-members .member-content {
+  padding-top: 2rem;
+  margin-left: 1rem;
+}
+.about-section-main .about-bottom-section .team-members .member-content p {
   color: #1D1D1D;
   font-size: 1.2rem;
   line-height: 1.8;
   text-align: left;
 }
 @media (max-width: 800px) {
-  .about-section-main .about-bottom-section .team-members .member-5 .member-content p {
+  .about-section-main .about-bottom-section .team-members .member-content p {
     font-size: 2rem;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
-  .about-section-main .about-bottom-section .team-members .member-5 .member-content p {
+  .about-section-main .about-bottom-section .team-members .member-content p {
     font-size: 1.6rem;
+    line-height: 1.6;
+    text-align: center;
+  }
+}
+.about-section-main .about-bottom-section .team-members .member-content .social {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+}
+.about-section-main .about-bottom-section .team-members .member-content .social a.social-text {
+  display: none;
+}
+@media (max-width: 500px) {
+  .about-section-main .about-bottom-section .team-members .member-content .social a.social-text {
+    display: block;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #0b6f6f;
+  }
+  .about-section-main .about-bottom-section .team-members .member-content .social a.social-text:hover {
+    transform: scale(1.2, 1.2);
+    transition: ease-in-out;
+  }
+}
+.about-section-main .about-bottom-section .team-members .member-content .social img {
+  margin-left: 1rem;
+  width: 18px;
+  height: 18px;
+}
+.about-section-main .about-bottom-section .team-members .member-content .social img:hover {
+  transform: scale(1.2, 1.2);
+  transition: ease-in-out;
+}
+@media (max-width: 500px) {
+  .about-section-main .about-bottom-section .team-members .member-content .social img {
+    display: none;
   }
 }
 @media (max-width: 800px) {
@@ -1105,22 +1226,6 @@ s .mobile-menu .mobile-menu-content:last-child {
     background-image: url('../img/quinn.jpeg');
   }
 }
-.about-section-main .about-bottom-section .team-members .member-6 .member-content p {
-  color: #1D1D1D;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  text-align: left;
-}
-@media (max-width: 800px) {
-  .about-section-main .about-bottom-section .team-members .member-6 .member-content p {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 500px) {
-  .about-section-main .about-bottom-section .team-members .member-6 .member-content p {
-    font-size: 1.6rem;
-  }
-}
 @media (max-width: 800px) {
   .about-section-main .about-bottom-section .team-members .member-6 {
     display: flex;
@@ -1149,22 +1254,6 @@ s .mobile-menu .mobile-menu-content:last-child {
 @media (max-width: 800px) {
   .about-section-main .about-bottom-section .team-members .member-6 .member-6-img {
     background-image: url('../img/rudy.png');
-  }
-}
-.about-section-main .about-bottom-section .team-members .member-7 .member-content p {
-  color: #1D1D1D;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  text-align: left;
-}
-@media (max-width: 800px) {
-  .about-section-main .about-bottom-section .team-members .member-7 .member-content p {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 500px) {
-  .about-section-main .about-bottom-section .team-members .member-7 .member-content p {
-    font-size: 1.6rem;
   }
 }
 @media (max-width: 800px) {
@@ -1197,22 +1286,6 @@ s .mobile-menu .mobile-menu-content:last-child {
     background-image: url('../img/erica.png');
   }
 }
-.about-section-main .about-bottom-section .team-members .member-8 .member-content p {
-  color: #1D1D1D;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  text-align: left;
-}
-@media (max-width: 800px) {
-  .about-section-main .about-bottom-section .team-members .member-8 .member-content p {
-    font-size: 2rem;
-  }
-}
-@media (max-width: 500px) {
-  .about-section-main .about-bottom-section .team-members .member-8 .member-content p {
-    font-size: 1.6rem;
-  }
-}
 @media (max-width: 800px) {
   .about-section-main .about-bottom-section .team-members .member-8 {
     display: flex;
@@ -1243,23 +1316,6 @@ s .mobile-menu .mobile-menu-content:last-child {
     background-image: url('../img/trish.png');
   }
 }
-.about-section-main .about-bottom-section .team-members .member-content {
-  padding-top: 2rem;
-  margin-left: 1rem;
-}
-.about-section-main .about-bottom-section .team-members .member-content p {
-  color: #1D1D1D;
-  font-size: 1.2rem;
-  line-height: 1.8;
-  text-align: left;
-}
-.about-section-main .about-bottom-section .team-members img {
-  border-radius: 50%;
-  width: 70%;
-  height: auto;
-  background: white;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
-}
 .header-background-featured {
   height: 60rem;
   background-color: black;
@@ -1274,6 +1330,19 @@ s .mobile-menu .mobile-menu-content:last-child {
     height: 30rem;
   }
 }
+@media (max-width: 500px) {
+  .header-background-featured {
+    height: 40rem;
+  }
+}
+@media (max-width: 500px) {
+  .features h1 {
+    display: block;
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+}
 .featured-main-container .signup-content {
   display: flex;
   justify-content: none;
@@ -1284,6 +1353,29 @@ s .mobile-menu .mobile-menu-content:last-child {
   margin: 0 auto;
   border-radius: 20px;
 }
+@media (max-width: 800px) {
+  .featured-main-container .signup-content {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  .featured-main-container .signup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding-top: 5rem;
+  }
+}
+@media (max-width: 500px) {
+  .featured-main-container .signup-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    padding-top: 5rem;
+  }
+}
 .featured-main-container .signup-content p {
   font-size: 1.5rem;
   width: 80%;
@@ -1291,6 +1383,13 @@ s .mobile-menu .mobile-menu-content:last-child {
   color: black;
   text-align: center;
   padding: 2rem;
+}
+@media (max-width: 500px) {
+  .featured-main-container .signup-content p {
+    font-size: 1.2rem;
+    width: 100%;
+    padding-top: 3.5rem;
+  }
 }
 .featured-main-container .signup-content .sign-up-button {
   min-height: 6rem;
@@ -1335,6 +1434,16 @@ s .mobile-menu .mobile-menu-content:last-child {
   transform: scale(1.3, 1.3);
   transition: ease-in-out;
 }
+@media (max-width: 700px) {
+  .featured-main-container .featured-pokemon .character-links .character-link {
+    margin-top: -2rem;
+  }
+}
+@media (max-width: 500px) {
+  .featured-main-container .featured-pokemon .character-links .character-link {
+    display: none;
+  }
+}
 .featured-main-container .featured-pokemon .carousel-arrows {
   width: 100px;
   height: 100px;
@@ -1350,16 +1459,23 @@ s .mobile-menu .mobile-menu-content:last-child {
   flex-direction: row;
   width: 100%;
 }
+.featured-main-container .featured-pokemon .character-items h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-left: 0rem;
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 500px) {
+  .featured-main-container .featured-pokemon .character-items h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+}
 .featured-main-container .featured-pokemon .character-items .pokemonSlides {
   display: none;
   width: 80%;
   height: 20rem;
-}
-.featured-main-container .featured-pokemon .character-items .pokemonSlides h2 {
-  font-size: 3rem;
-  font-weight: 400;
-  margin-left: 15rem;
-  margin-bottom: 1.5rem;
 }
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon {
   display: flex;
@@ -1370,17 +1486,111 @@ s .mobile-menu .mobile-menu-content:last-child {
   margin: 10px;
   overflow: hidden;
 }
+@media (max-width: 700px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 500px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon {
+    margin: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 700px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images {
+    height: 30rem;
+  }
+}
+@media (max-width: 500px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images {
+    height: 30rem;
+  }
+}
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images .pokemon-character {
   height: 35rem;
   position: relative;
 }
+@media (max-width: 800px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images .pokemon-character {
+    height: 25rem;
+  }
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #beedrill {
+  height: 35rem;
+}
+@media (max-width: 800px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #beedrill {
+    height: 25rem;
+  }
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #bulbasaur {
+  height: 25rem;
+  margin-right: 10rem;
+}
+@media (max-width: 500px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #bulbasaur {
+    height: 20rem;
+    margin-top: 5rem;
+    margin-right: 0;
+  }
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #squirtle {
+  height: 25rem;
+  margin-right: 10rem;
+}
+@media (max-width: 500px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #squirtle {
+    height: 20rem;
+    margin-right: 0;
+    margin-top: 5rem;
+  }
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #charizard {
+  height: 45rem;
+  margin-top: -3rem;
+}
+@media (max-width: 800px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #charizard {
+    height: 30rem;
+    margin-bottom: -5rem;
+  }
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #jigglypuff {
+  height: 25rem;
+  margin-right: 5rem;
+}
+@media (max-width: 800px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #jigglypuff {
+    height: 20rem;
+  }
+}
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images .background {
   z-index: -1;
-  height: 100rem;
+  height: 90rem;
   position: absolute;
   margin-top: -60rem;
   margin-left: 0;
   right: -40rem;
+}
+@media (max-width: 800px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images .background {
+    height: 80rem;
+  }
+}
+@media (max-width: 800px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images .background {
+    height: 50rem;
+    margin-top: -40rem;
+    right: -20rem;
+  }
 }
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content {
   display: flex;
@@ -1390,15 +1600,32 @@ s .mobile-menu .mobile-menu-content:last-child {
   margin-top: 15rem;
   position: relative;
 }
+@media (max-width: 800px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content {
+    margin-top: 5rem;
+  }
+}
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content img.pokemon-stats {
   margin-right: 0;
   margin-top: -14rem;
   border-radius: 10px;
-  margin-left: 5rem;
+  margin-left: 4rem;
   padding: 10px;
   padding-top: 1rem;
   padding-bottom: 3rem;
   height: 20rem;
+}
+@media (max-width: 800px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content img.pokemon-stats {
+    height: 18rem;
+    margin-left: 0rem;
+    margin-top: 0.01rem;
+  }
+}
+@media (max-width: 700px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content img.pokemon-stats {
+    display: none;
+  }
 }
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content p {
   margin-top: 10rem;
@@ -1408,6 +1635,47 @@ s .mobile-menu .mobile-menu-content:last-child {
   width: 75%;
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+@media (max-width: 800px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content p {
+    margin-top: 10rem;
+    margin-right: 0.2rem;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+@media (max-width: 700px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content p {
+    margin-top: -5rem;
+    text-align: center;
+    align-self: center;
+    font-size: 1.5rem;
+    width: 100%;
+    vertical-align: middle;
+  }
+}
+@media (max-width: 500px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content p {
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 500px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content #squirtle-content {
+    margin-bottom: 12rem;
+    font-size: 1.34rem;
+  }
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content #mewtwo {
+  height: 20rem;
+  margin-top: -12rem;
+}
+@media (max-width: 800px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content #mewtwo {
+    height: 18rem;
+    margin-top: -2rem;
+  }
 }
 .featured-main-container .featured-pokemon .character-items .pokemon-slide-selected {
   display: block !important;

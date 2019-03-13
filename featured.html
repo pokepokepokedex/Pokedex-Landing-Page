@@ -15,6 +15,23 @@
 <body>
     <div class="header-background-featured"></div>
     <div class="header-backgroundtwo"></div>
+
+    <div class = "mobile-menu">
+        <div class = "mobile-nav">
+          <img class="mobile-menu-btn" src="img/mobile_menu.svg" alt = "menu bar icon">  
+          <div class ="logo">
+              <a href="index.html"><img src="img/logo.png" alt="pokestats logo"></a>
+                      <p>Pokéstats</p>
+          </div>
+        </div>
+          <div class="mobile-menu-content mobile-menu-hidden">
+                <a href="index.html">HOME</a>
+                  <a href="featured.html">FEATURED</a>
+                  <a href="about.html">ABOUT US</a>
+                  <a href="https://pokestat.netlify.com/">SIGN UP</a>
+          </div>
+    </div> <!--End of mobile menu-->
+  
     <div class="container">
         <nav> 
         <img class="mobile-menu" src="img/mobile_menu.svg" alt = "menu bar icon">
@@ -28,7 +45,7 @@
                 <a href="https://pokestat.netlify.com/" target="_blank">SIGN UP</a>
         </div>
         </nav>
-        <header>
+        <header class="features">
             <div>
                 <h1>
                     Our Favorites
@@ -37,7 +54,7 @@
         </header>
         <div class="featured-main-container">
             <div class="featured-pokemon">
-                <div class="character-links">
+                <div class="character-links" data-aos="zoom-out">
                     <img src="img/electric.svg"  alt="electric icon" class="character-link" data-tab="1">
                     <img src="img/bug.svg"   alt="bug icon" class="character-link" data-tab="2">
                     <img src="img/grass_2.svg"   alt="grass icon" class="character-link" data-tab="3">
@@ -68,12 +85,12 @@
                                     <h2>Beedrill</h2>
                                     <div class="pokemon">
                                         <div class="about-content">
-                                                <img class="pokemon-stats"   alt="beedrill stats" src="img/stats_beedrill.png">
+                                                <img class="pokemon-stats" alt="beedrill stats" src="img/stats_beedrill.png">
                                                 <p class="animated fadeIn">Beedrill is extremely territorial, and when threatened, flies at high speeds and attacks with large, venomous stingers.</p>
                                             </div>
                                                 <div class="pokemon-images">
-                                                        <img class="pokemon-character" style = "height: 35rem" alt="beedrill" src="img/beedrill.gif">
-                                                        <img class="background" alt="yellow background" src="img/pokemon_back_blue.svg">
+                                                        <img class="pokemon-character" id = "beedrill" alt="beedrill" src="img/beedrill.gif">
+                                                        <img class="background" alt="yellow background" src="img/pokemon_back_green.svg">
                                                 </div>
                                     </div>
                                 </div>
@@ -86,10 +103,10 @@
                                                     <p class="animated fadeIn">By soaking up the sun's rays, the seed on Bulbasaur’s back grows progressively larger to power up.</p>
                                             </div>
                                             <div class="pokemon-images">
-                                                    <img class="pokemon-character" alt="bulbasaur" 
-                                                    style= "height: 25rem; margin-right: 10rem"
+                                                    <img class="pokemon-character" id = "bulbasaur" alt="bulbasaur" 
+
                                                     src="img/bulbasaur.gif">
-                                                    <img class="background" alt="yellow background" src="img/pokemon_back_yellow.svg">
+                                                    <img class="background" alt="yellow background" src="img/pokemon_back_green.svg">
                                             </div>
                                         </div>
                                     </div>
@@ -99,11 +116,10 @@
                                             <div class="pokemon">
                                                 <div class="about-content">
                                                         <img class="pokemon-stats" alt="squirtle stats" src="img/stats_squirtle.png">
-                                                        <p class="animated fadeIn" >Squirtle’s most powerful asset is his shell, allowing him to swim at high speeds (as it minimizes water resistance), and shielding him from his enemies.</p>
+                                                        <p id="squirtle-content" class="animated fadeIn" >Squirtle’s most powerful asset is his shell, allowing him to swim at high speeds (as it minimizes water resistance), and shielding him from his enemies.</p>
                                                 </div>
                                                     <div class="pokemon-images">
-                                                            <img class="pokemon-character" alt="squirtle" 
-                                                            style= "height: 25rem; margin-right: 10rem"
+                                                            <img class="pokemon-character" id = "squirtle" alt="squirtle" 
                                                             src="img/squirtle.gif">
                                                             <img class="background" alt="yellow background" src="img/pokemon_back_blue.svg">
                                                     </div>
@@ -114,13 +130,12 @@
                                                 <h2>Charizard</h2>
                                                 <div class="pokemon">
                                                     <div class="about-content">
-                                                    <img class="pokemon-stats" alt="charizard stats" style="margin-left: -1rem" src="img/stats_charizard.png">
-                                                    <p class="animated fadeIn" style="margin-top: 5rem; width: 80%" >Charizard’s ability to fly and breathe fire is one of the most deadliest of combinations. It’s constantly searching for his next opponent to battle, so beware! Its fire can melt anything in its path.
+                                                    <img class="pokemon-stats" alt="charizard stats" src="img/stats_charizard.png">
+                                                    <p class="animated fadeIn" id = "charizard-description" >Charizard’s ability to fly and breathe fire is one of the most deadliest of combinations. It’s constantly searching for his next opponent to battle, so beware! Its fire can melt anything in its path.
                                                         </p>
                                                     </div>
                                                         <div class="pokemon-images">
-                                                                <img class="pokemon-character" alt="charizard" 
-                                                                style = "height: 45rem; margin-top: -3rem" 
+                                                                <img class="pokemon-character" id="charizard" alt="charizard" 
                                                                 src="img/charizard.gif">
                                                                 <img class="background" alt="yellow background" src="img/pokemon_back_red.svg">
                                                         </div>
@@ -131,13 +146,12 @@
                                                     <h2>Mewtwo</h2>
                                                     <div class="pokemon">
                                                         <div class="about-content">
-                                                                <img class="pokemon-stats" alt="mewtwo stats" src="img/stats_mewtwo.png">
-                                                                <p class="animated fadeIn" style="margin-top: 5rem; width: 80%">Mewtwo was created by science, capable of telepathy, levitation, and mind control. Mewtwo is hyper-focused on defeating its foes, and is known to have the most savage heart of all Pokemon, striking fear into its enemies with its cold, glowing eyes. 
+                                                                <img class="pokemon-stats" id = "mewtwo" alt="mewtwo stats" src="img/stats_mewtwo.png">
+                                                                <p class="animated fadeIn" >Mewtwo was created by science, capable of telepathy, levitation, and mind control. It is hyper-focused on defeating its foes and is known to have the most savage heart of all Pokemon.
                                                                     </p>
                                                         </div>
                                                             <div class="pokemon-images">
                                                                     <img class="pokemon-character" alt="mewtwo" 
-                                                                    style= "height: 37rem; margin-top: -3rem"
                                                                     src="img/mewtwo.gif">
                                                                     <img class="background" alt="yellow background" src="img/pokemon_back_purple.svg">
                                                             </div>
@@ -153,8 +167,7 @@
                                                                         </p>
                                                             </div>
                                                                 <div class="pokemon-images">
-                                                                        <img class="pokemon-character" alt="jigglypuff" 
-                                                                        style= "height: 25rem; margin-right: 5rem"
+                                                                        <img class="pokemon-character" id = "jigglypuff" alt="jigglypuff" 
                                                                         src="img/jigglypuff.gif">
                                                                         <img class="background" alt="yellow background" src="img/pokemon_back_pink.svg">
                                                                 </div>
@@ -175,9 +188,9 @@
         <div class="footer-nav-social-icons">
                 <div class="footer-nav">
                         <div class="footer-links">
-                                <a href="featured.html" target="_blank">FEATURED</a>
-                                <a href="about.html" target="_blank">ABOUT US</a>
-                                <a href="https://pokestat.netlify.com/" target="_blank">SIGN UP</a>
+                                <a href="featured.html">FEATURED</a>
+                                <a href="about.html">ABOUT US</a>
+                                <a href="https://pokestat.netlify.com/">SIGN UP</a>
                         </div>
                       </div>
                 <div class="social-icons">
