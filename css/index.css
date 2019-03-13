@@ -312,6 +312,7 @@ nav .mobile-menu-btn {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    margin-top: 9rem;
   }
 }
 .homepage .feature-one .feature-description h2 {
@@ -931,6 +932,58 @@ s .mobile-menu .mobile-menu-content:last-child {
     text-align: center;
   }
 }
+.about-section-main .about-top-section .team-members .member-content .social {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+}
+@media (max-width: 800px) {
+  .about-section-main .about-top-section .team-members .member-content .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+}
+.about-section-main .about-top-section .team-members .member-content .social a.social-text {
+  display: none;
+}
+@media (max-width: 500px) {
+  .about-section-main .about-top-section .team-members .member-content .social a.social-text {
+    display: block;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: #0b6f6f;
+  }
+  .about-section-main .about-top-section .team-members .member-content .social a.social-text:hover {
+    transform: scale(1.2, 1.2);
+    transition: ease-in-out;
+  }
+}
+.about-section-main .about-top-section .team-members .member-content .social img {
+  margin-left: 1rem;
+  width: 18px;
+  height: 18px;
+}
+.about-section-main .about-top-section .team-members .member-content .social img:hover {
+  transform: scale(1.2, 1.2);
+  transition: ease-in-out;
+}
+@media (max-width: 800px) {
+  .about-section-main .about-top-section .team-members .member-content .social img {
+    width: 30px;
+    height: 30px;
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 500px) {
+  .about-section-main .about-top-section .team-members .member-content .social img {
+    display: none;
+  }
+}
 @media (max-width: 800px) {
   .about-section-main .about-top-section .team-members .member-1 {
     display: flex;
@@ -1099,6 +1152,43 @@ s .mobile-menu .mobile-menu-content:last-child {
     font-size: 1.6rem;
     line-height: 1.6;
     text-align: center;
+  }
+}
+.about-section-main .about-bottom-section .team-members .member-content .social {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+}
+.about-section-main .about-bottom-section .team-members .member-content .social a.social-text {
+  display: none;
+}
+@media (max-width: 500px) {
+  .about-section-main .about-bottom-section .team-members .member-content .social a.social-text {
+    display: block;
+    margin-left: 1rem;
+    font-size: 1.6rem;
+    text-decoration: none;
+    font-weight: 500;
+    color: #0b6f6f;
+  }
+  .about-section-main .about-bottom-section .team-members .member-content .social a.social-text:hover {
+    transform: scale(1.2, 1.2);
+    transition: ease-in-out;
+  }
+}
+.about-section-main .about-bottom-section .team-members .member-content .social img {
+  margin-left: 1rem;
+  width: 18px;
+  height: 18px;
+}
+.about-section-main .about-bottom-section .team-members .member-content .social img:hover {
+  transform: scale(1.2, 1.2);
+  transition: ease-in-out;
+}
+@media (max-width: 500px) {
+  .about-section-main .about-bottom-section .team-members .member-content .social img {
+    display: none;
   }
 }
 @media (max-width: 800px) {
@@ -1505,6 +1595,7 @@ s .mobile-menu .mobile-menu-content:last-child {
   .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content img.pokemon-stats {
     height: 18rem;
     margin-left: 0rem;
+    margin-top: 0.01rem;
   }
 }
 @media (max-width: 500px) {
@@ -1521,11 +1612,22 @@ s .mobile-menu .mobile-menu-content:last-child {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+@media (max-width: 800px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content p {
+    margin-top: 10rem;
+    margin-right: 0.2rem;
+    text-align: center;
+    align-self: center;
+    width: 100%;
+    vertical-align: middle;
+  }
+}
 @media (max-width: 500px) {
   .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content p {
     margin-top: -6rem;
     text-align: center;
     align-self: center;
+    font-size: 1.5rem;
     width: 100%;
     vertical-align: middle;
   }

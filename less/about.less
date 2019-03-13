@@ -64,6 +64,52 @@ header {
                     }
                 }
 
+                .social {
+                    .flex(none, center, row);
+                    @media @tablet {
+                        .flex(center, center, row);
+                    }
+                    a.social-text {
+                        display:none; 
+
+                        @media @phone {
+                            display: block;
+                            margin-left: 1rem;
+                            font-size: 1.6rem;
+                            font-weight: 500;
+                            text-decoration: none;
+                            color: rgb(11, 111, 111);
+
+                            &:hover {
+                            transform: scale(1.2, 1.2);
+                            transition: ease-in-out;
+                            }
+                        }
+                    }
+                    img {
+                        margin-left: 1rem;
+                        width: 18px;
+                        height: 18px;
+
+                        &:hover{
+                            transform: scale(1.2, 1.2);
+                            transition: ease-in-out;
+                        }
+
+                        @media @tablet {
+                            width: 30px;
+                        height: 30px;
+                        margin-left: 2rem;
+                        }
+
+                        @media @phone {
+                            display: none;
+                        }
+    
+                    }
+
+                }
+
             } // Team members description styling for all of row 1 of team members.
 
             .member-1 {
@@ -227,7 +273,7 @@ header {
                     @media @tablet {
                         font-size: 2rem;
                         text-align: center;
-                        // margin-left: 2rem;
+                    
 
                     }
 
@@ -235,9 +281,46 @@ header {
                         font-size: 1.6rem;
                         line-height: 1.6;
                         text-align: center;
-                        // margin-left: 2rem;
+                    
 
                     }
+                }
+
+                .social {
+                    .flex(none, center, row);
+                    a.social-text {
+                        display:none; 
+
+                        @media @phone {
+                            display: block;
+                            margin-left: 1rem;
+                            font-size: 1.6rem;
+                            text-decoration: none;
+                            font-weight: 500;
+                            color: rgb(11, 111, 111);
+
+                            &:hover {
+                            transform: scale(1.2, 1.2);
+                            transition: ease-in-out;
+                            }
+                        }
+                    }
+                    img {
+                        margin-left: 1rem;
+                        width: 18px;
+                        height: 18px;
+
+                        &:hover{
+                            transform: scale(1.2, 1.2);
+                            transition: ease-in-out;
+                        }
+
+                        @media @phone {
+                            display: none;
+                        }
+                    }
+
+
                 }
 
             } // Team members description styling for all of row 2 of team members.
