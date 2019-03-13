@@ -1,0 +1,158 @@
+.header-background-featured {
+    height: 70rem;
+    background-color: black;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
+    @media @phone{
+      height: 30rem;
+    }
+
+
+  clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+
+.featured-main-container {
+
+    .signup-content {
+        .flex(none, center, column);
+        height: 10rem;
+        width: 80rem;
+        margin: 0 auto;
+        border: .5px solid @pokestats-color-grey;
+        border-radius: 20px;
+
+        p {
+
+            font-size: 1.8rem;
+             line-height: 1.4;
+            color: black;
+            text-align: center;
+            padding: 2rem;
+
+        }
+
+        .sign-up-button {
+            padding: 3rem;
+            text-align: center;
+            width: 23rem;
+            border-radius: 1rem;
+            background-color: #F8FF34;
+            box-shadow: 2px 2px 15px rgba(250, 255, 153, 0.9),
+            2px 2px 6px rgba(0, 0, 0, 0.5);
+            border-style: none;
+            color: @pokestats-color-primary;
+            font-size: 1.8rem;
+            position: relative;
+            overflow: hidden;
+            transition: .2s;
+    
+            &:hover {
+              cursor: pointer;
+              color: black;
+              border-radius: 2rem;
+    
+          }
+    
+        }
+    }
+
+    .featured-pokemon {
+        .flex(none, none, column-reverse);
+
+        .character-links {
+            .flex(center, center, row);
+            .max-width-desktop();
+
+            .character-link {
+                width: 10%;
+                height: 100px;
+                margin-top: 12rem;
+                margin-bottom: rem;
+            }
+        }
+
+        .character-items {
+
+            .flex(space-between, none, row);
+            width: 100%; 
+
+            .carousel-arrows {
+                width: 100px;
+                height: 100px;
+                margin-top: 10rem;
+            }
+
+            .pokemonSlides {
+                display: none;
+
+                h2 {
+                    font-size: 3rem;
+                    font-weight: 400;
+                    margin-left: 15rem;
+                    margin-bottom: 1.5rem;
+                }
+                
+                .pokemon {
+                    .flex(around, center, row);
+                    position: relative;
+
+
+                    .pokemon-images {
+                        .pokemon-character{
+                            height: 50rem;
+                            position: relative;
+                            margin-top: -6rem;
+                        }
+    
+                        .background{
+                            z-index: -1;
+                            position: absolute;
+                            margin-top: -60rem;
+                            margin-left: -30rem;
+                        }
+
+                    } 
+
+                    .about-content {
+                        .flex(center, flex-start, column);
+                        margin-top: 15rem;
+                        position: relative;
+
+
+                        img.pokemon-stats{
+                            margin-right: 20rem;
+                            margin-top: -14rem;
+                            border-radius: 10px;
+                            border: 2px solid grey;
+                            padding-top: 1rem;
+                            padding-bottom: 3rem;
+                        }
+
+                        p {
+                            margin-top: 10rem;
+                            font-size: 1.8rem;
+                            line-height: 1.4;
+                            color: black;
+                            width: 60%;
+                            padding-top: 2rem;
+                            padding-bottom: 2rem;
+                    
+                        }
+    
+                    }
+
+                }
+            }
+            
+            .pokemon-slide-selected {
+                display: block !important;
+            }
+
+        }
+
+
+    }
+
+}
