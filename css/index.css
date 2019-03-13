@@ -245,13 +245,7 @@ nav .logo p {
 }
 @media (max-width: 500px) {
   nav .logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin: 0 auto;
-    z-index: 2;
-    position: relative;
+    display: none;
   }
 }
 nav .links a {
@@ -283,12 +277,7 @@ nav .mobile-menu-btn {
 }
 @media (max-width: 500px) {
   nav {
-    position: sticky;
-    top: 0;
-    margin: -2rem -3rem 3rem -3rem;
-    background-color: #1D1D1D;
-    z-index: 10;
-    padding: 1rem 3rem 1rem 3rem;
+    display: none;
   }
 }
 .homepage .water-icon {
@@ -793,20 +782,52 @@ nav .mobile-menu-btn {
   color: black;
   border-radius: 2rem;
 }
-.mobile-menu .mobile-menu-btn {
-  margin-left: 3rem;
-  margin-top: 2rem;
-  z-index: 15;
-  position: relative;
+.mobile-menu {
   display: none;
 }
 @media (max-width: 500px) {
-  .mobile-menu .mobile-menu-btn {
+  .mobile-menu {
+    display: block;
+  }
+}
+.mobile-menu .mobile-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #1D1D1D;
+  z-index: 10;
+  padding: 1rem 3rem 1rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.mobile-menu .mobile-nav .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+.mobile-menu .mobile-nav .logo p {
+  font-size: 1.5rem;
+  color: white;
+  margin-left: 1rem;
+}
+.mobile-menu .mobile-nav .mobile-menu-btn {
+  z-index: 15;
+  display: none;
+}
+.mobile-menu .mobile-nav .mobile-menu-btn img {
+  align-self: center;
+}
+@media (max-width: 500px) {
+  .mobile-menu .mobile-nav .mobile-menu-btn {
     display: block;
   }
 }
 .mobile-menu .mobile-menu-content {
   position: absolute;
+  position: fixed;
   width: 40%;
   z-index: 2;
   cursor: pointer;
@@ -828,7 +849,7 @@ nav .mobile-menu-btn {
   margin-left: 2rem;
   margin-top: 3rem;
 }
-.mobile-menu .mobile-menu-content:last-child {
+s .mobile-menu .mobile-menu-content:last-child {
   color: #F8FF33;
 }
 .mobile-menu .mobile-menu-hidden {
@@ -910,7 +931,7 @@ nav .mobile-menu-btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-top-section .team-members .member-1 .member-1-img:hover {
   background-image: url('../img/ben.png');
@@ -940,7 +961,7 @@ nav .mobile-menu-btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-top-section .team-members .member-2 .member-2-img:hover {
   background-image: url('../img/javontay.png');
@@ -970,7 +991,7 @@ nav .mobile-menu-btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-top-section .team-members .member-3 .member-3-img:hover {
   background-image: url('../img/brandon.png');
@@ -1000,7 +1021,7 @@ nav .mobile-menu-btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-top-section .team-members .member-4 .member-4-img:hover {
   background-image: url('../img/cj.jpeg');
@@ -1073,7 +1094,7 @@ nav .mobile-menu-btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-bottom-section .team-members .member-5 .member-5-img:hover {
   background-image: url('../img/quinn.jpeg');
@@ -1119,7 +1140,7 @@ nav .mobile-menu-btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-bottom-section .team-members .member-6 .member-6-img:hover {
   background-image: url('../img/rudy.png');
@@ -1165,7 +1186,7 @@ nav .mobile-menu-btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-bottom-section .team-members .member-7 .member-7-img:hover {
   background-image: url('../img/erica.png');
@@ -1211,7 +1232,7 @@ nav .mobile-menu-btn {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-bottom-section .team-members .member-8 .member-8-img:hover {
   background-image: url('../img/trish.png');
@@ -1238,6 +1259,161 @@ nav .mobile-menu-btn {
   height: auto;
   background: white;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+}
+.header-background-featured {
+  height: 60rem;
+  background-color: black;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .header-background-featured {
+    height: 30rem;
+  }
+}
+.featured-main-container .signup-content {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: column;
+  height: 10rem;
+  width: 80rem;
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.featured-main-container .signup-content p {
+  font-size: 1.5rem;
+  width: 80%;
+  line-height: 1.4;
+  color: black;
+  text-align: center;
+  padding: 2rem;
+}
+.featured-main-container .signup-content .sign-up-button {
+  min-height: 6rem;
+  text-align: center;
+  width: 23rem;
+  border-radius: 1rem;
+  background-color: #F8FF34;
+  box-shadow: 2px 2px 15px rgba(250, 255, 153, 0.9), 2px 2px 6px rgba(0, 0, 0, 0.5);
+  border-style: none;
+  color: #1D1D1D;
+  font-size: 1.8rem;
+  position: relative;
+  overflow: hidden;
+  transition: 0.2s;
+}
+.featured-main-container .signup-content .sign-up-button:hover {
+  cursor: pointer;
+  color: black;
+  border-radius: 2rem;
+}
+.featured-main-container .featured-pokemon {
+  display: flex;
+  justify-content: none;
+  align-items: none;
+  flex-direction: column-reverse;
+}
+.featured-main-container .featured-pokemon .character-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.featured-main-container .featured-pokemon .character-links .character-link {
+  width: 10%;
+  height: 80px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+.featured-main-container .featured-pokemon .character-links .character-link:hover {
+  transform: scale(1.3, 1.3);
+  transition: ease-in-out;
+}
+.featured-main-container .featured-pokemon .carousel-arrows {
+  width: 100px;
+  height: 100px;
+  margin-top: 10rem;
+  z-index: 4;
+}
+.featured-main-container .featured-pokemon .character-items {
+  overflow: hidden;
+  height: 50rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: row;
+  width: 100%;
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides {
+  display: none;
+  width: 80%;
+  height: 20rem;
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides h2 {
+  font-size: 3rem;
+  font-weight: 400;
+  margin-left: 15rem;
+  margin-bottom: 1.5rem;
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  margin: 10px;
+  overflow: hidden;
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images .pokemon-character {
+  height: 35rem;
+  position: relative;
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images .background {
+  z-index: -1;
+  height: 100rem;
+  position: absolute;
+  margin-top: -60rem;
+  margin-left: 0;
+  right: -40rem;
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-top: 15rem;
+  position: relative;
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content img.pokemon-stats {
+  margin-right: 0;
+  margin-top: -14rem;
+  border-radius: 10px;
+  margin-left: 5rem;
+  padding: 10px;
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  height: 20rem;
+}
+.featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content p {
+  margin-top: 10rem;
+  font-size: 1.5rem;
+  line-height: 1.4;
+  color: black;
+  width: 75%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.featured-main-container .featured-pokemon .character-items .pokemon-slide-selected {
+  display: block !important;
+}
+.featured-main-container .featured-pokemon .character-items .pokemon-slide-selected h2 {
+  margin-left: 0;
 }
 * {
   box-sizing: border-box;
