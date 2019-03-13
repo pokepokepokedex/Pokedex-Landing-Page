@@ -1374,6 +1374,11 @@ s .mobile-menu .mobile-menu-content:last-child {
   height: 35rem;
   position: relative;
 }
+@media (max-width: 800px) {
+  .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images .pokemon-character {
+    height: 2rem;
+  }
+}
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images .background {
   z-index: -1;
   height: 100rem;
