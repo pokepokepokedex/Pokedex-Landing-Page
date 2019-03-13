@@ -1,0 +1,45 @@
+.mobile-menu{
+
+    .mobile-menu-btn {
+      margin-left: 3rem;
+      margin-top: 2rem;
+      z-index: 15;
+      position: relative;
+      display: none; 
+      @media @phone{
+        display:block;
+      }
+    }
+
+    .mobile-menu-content{
+      z-index: 2;
+      position: absolute;
+      width: 40%;
+      z-index: 2;
+      cursor: pointer;  
+      background: black; 
+      height: 100%;
+      overflow: hidden;
+      opacity: 0.9;
+      box-shadow: 5px 0px 20px @pokestats-color-primary;
+      a{
+        .flex(space-between, flex-start, column);
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        margin-bottom: 4rem;
+        margin-left: 2rem;
+        margin-top: 3rem;
+      }
+
+
+    &:last-child {
+      color: @pokestats-color-yellow;
+    }
+  } 
+
+    .mobile-menu-hidden {
+      display: none;
+
+    }
+  }

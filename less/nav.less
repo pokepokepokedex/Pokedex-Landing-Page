@@ -3,24 +3,67 @@ nav {
     .max-width-desktop();
     .logo {
         .flex(space-around, center, row);
+        &:hover {
+            cursor: pointer;
+        }
 
         p {
             margin-left: 1.5rem;
             font-size: 1.5rem;
+
         }
+
+        @media @phone{
+            .flex(center, center, row);
+            margin: 0 auto;
+            z-index: 2;
+            position: relative;
+          }
     }
 
     .links{
+
         a {
             text-decoration: none;
-            margin-left: 1rem;
+            margin-left: 4rem;
             font-size: 1.25rem;
             color: white;
+
+            &:hover{
+                text-decoration: underline;
+            }
         }
 
         a:last-child {
             color: #F8FF33;
         }
+        
+        @media @phone{
+            display: none;
+          }
 
     }
+
+    .mobile-menu-btn{
+        display: none;
+
+        @media @phone{
+            display: block;
+            z-index: 3;
+            position: absolute;
+          }
+    }
+
+    @media @phone{
+        position: sticky;
+        top: 0;
+        margin: -2rem -3rem 3rem -3rem; 
+        background-color: @pokestats-color-primary;
+        z-index: 10;
+        padding: 1rem 3rem 1rem 3rem;
+
+      }
+
+
+
 }
