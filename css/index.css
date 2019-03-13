@@ -1272,7 +1272,7 @@ nav .mobile-menu-btn {
   padding: 2rem;
 }
 .featured-main-container .signup-content .sign-up-button {
-  padding: 3rem;
+  min-height: 6rem;
   text-align: center;
   width: 23rem;
   border-radius: 1rem;
