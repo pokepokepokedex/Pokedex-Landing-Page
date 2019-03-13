@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Pokéstats - Featured Pokémon Characters</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+  <link href="css/index.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header-background"></div>
+    <div class="header-backgroundtwo"></div>
+    <div class="container">
+        <nav> 
+        <img class="mobile-menu" src="img/mobile_menu.svg" alt = "menu bar icon">
+        <div class="logo">
+            <img src="img/logo.png" alt="pokestats logo">
+            <p>Pokéstats</p>
+        </div>  
+        <div class="links">
+                <a href="#">FEATURED</a>
+                <a href="#">ABOUT US</a>
+                <a href="#">SIGN UP</a>
+        </div>
+        </nav>
+        <header>
+            <div>
+                <h1>
+                    Featured Pokémon
+                </h1>
+            </div>
+        </header>
+        <div class="featured-main-container">
+            <div class="featured-pokemon">
+                <div class="character-links">
+                    <img src="water-icon.svg"  style="width: 10%; height: 100px;" alt="" class="character-link" data-tab="1">
+                    <img src="water-icon.svg"  style="width: 10%; height: 100px;" alt="" class="character-link" data-tab="2">
+                    <img src="water-icon.svg"  style="width: 10%; height: 100px;" alt="" class="character-link" data-tab="3">
+                    <img src="water-icon.svg"  style="width: 10%; height: 100px;" alt="" class="character-link" data-tab="4">
+                </div>
+                    <div class="character-items" style="display: flex; flex-direction: row; justify-content: space-between; width: 100%; border: 1px solid black;">
+                            <button onclick="plusDivs(-1)">&#10094;</button>
+                            <img class="mySlides my-slide-selected" data-tab="1" src="Pikachu.gif" style="width:20%; height: 200px;">
+                            <img class="mySlides" data-tab="2" src="Absol.gif" style="width:20%; height: 200px;">
+                            <img class="mySlides" data-tab="3" src="Pikachu.gif" style="width:20%; height: 200px;">
+                            <img class="mySlides" data-tab="4" src="Absol.gif" style="width:20%; height: 200px;">
+                            <button onclick="plusDivs(1)">&#10095;</button>
+                          </div>
+            </div>
+        </div>
+    </div> <!-- main container --->
+    <footer>
+        <div class="footer-nav-social-icons">
+                <div class="footer-nav">
+                        <div class="footer-links">
+                                <a href="#">FEATURED</a>
+                                <a href="#">ABOUT US</a>
+                                <a href="#">SIGN UP</a>
+                        </div>
+                      </div>
+                <div class="social-icons">
+                    <a href="#"><img src="img/twitter.png" alt="twitter logo"></a>
+                    <a href="#"><img src="img/facebook.png" alt="facebook logo"></a>
+                    <a href="#"><img src="img/instagram.png" alt="instagram logo"></a>
+
+                    <a href="#"><img class = "yellow-icon" src="img/twitteryellow.png" alt="yellow twitter icon"></a>
+                    <a href="#"><img class = "yellow-icon" src="img/facebookyellow.png" alt="yellow facebook icon"></a>
+                    <a href="#"><img class = "yellow-icon" src="img/instagramyellow.png" alt="yellow instagram icon"></a>
+                </div>
+        </div>
+        <div class="copyright">
+            Pokéstats 2019 | 1.000.MY.POKE | Disclaimer | Privacy Policy
+        </div>
+        </footer>
+  <script src="js/header.js"></script>
+  <script src="js/mobilenav.js"></script>
+  <script src="js/featured.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+      AOS.init();
+    </script>
+</body>
+</html>
