@@ -931,7 +931,7 @@ s .mobile-menu .mobile-menu-content:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-top-section .team-members .member-1 .member-1-img:hover {
   background-image: url('../img/ben.png');
@@ -961,7 +961,7 @@ s .mobile-menu .mobile-menu-content:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-top-section .team-members .member-2 .member-2-img:hover {
   background-image: url('../img/javontay.png');
@@ -991,7 +991,7 @@ s .mobile-menu .mobile-menu-content:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-top-section .team-members .member-3 .member-3-img:hover {
   background-image: url('../img/brandon.png');
@@ -1021,7 +1021,7 @@ s .mobile-menu .mobile-menu-content:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-top-section .team-members .member-4 .member-4-img:hover {
   background-image: url('../img/cj.jpeg');
@@ -1094,7 +1094,7 @@ s .mobile-menu .mobile-menu-content:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-bottom-section .team-members .member-5 .member-5-img:hover {
   background-image: url('../img/quinn.jpeg');
@@ -1140,7 +1140,7 @@ s .mobile-menu .mobile-menu-content:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-bottom-section .team-members .member-6 .member-6-img:hover {
   background-image: url('../img/rudy.png');
@@ -1186,7 +1186,7 @@ s .mobile-menu .mobile-menu-content:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-bottom-section .team-members .member-7 .member-7-img:hover {
   background-image: url('../img/erica.png');
@@ -1232,7 +1232,7 @@ s .mobile-menu .mobile-menu-content:last-child {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 30px #8f8f8f;
 }
 .about-section-main .about-bottom-section .team-members .member-8 .member-8-img:hover {
   background-image: url('../img/trish.png');
@@ -1371,7 +1371,7 @@ s .mobile-menu .mobile-menu-content:last-child {
   overflow: hidden;
 }
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images .pokemon-character {
-  height: 70%;
+  height: 35rem;
   position: relative;
 }
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images .background {
@@ -1402,7 +1402,7 @@ s .mobile-menu .mobile-menu-content:last-child {
 }
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .about-content p {
   margin-top: 10rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   line-height: 1.4;
   color: black;
   width: 75%;
