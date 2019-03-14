@@ -1,218 +1,418 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Pokéstats - Featured Pokémon Characters</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+    <title>Pokéstats - Featured Pokémon Characters</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+    />
+    <link href="css/index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <div class="header-background-featured"></div>
     <div class="header-backgroundtwo"></div>
 
-    <div class = "mobile-menu">
-        <div class = "mobile-nav">
-          <img class="mobile-menu-btn" src="img/mobile_menu.svg" alt = "menu bar icon">  
-          <div class ="logo">
-              <a href="index.html"><img src="img/logo.png" alt="pokestats logo"></a>
-                      <p>Pokéstats</p>
-          </div>
-        </div>
-          <div class="mobile-menu-content mobile-menu-hidden">
-                <a href="index.html">HOME</a>
-                  <a href="featured.html">FEATURED</a>
-                  <a href="about.html">ABOUT US</a>
-                  <a href="https://pokestat.netlify.com/">SIGN UP</a>
-          </div>
-    </div> <!--End of mobile menu-->
-  
-    <div class="container">
-        <nav> 
-        <img class="mobile-menu" src="img/mobile_menu.svg" alt = "menu bar icon">
+    <div class="mobile-menu">
+      <div class="mobile-nav">
+        <img
+          class="mobile-menu-btn"
+          src="img/mobile_menu.svg"
+          alt="menu bar icon"
+        />
         <div class="logo">
-            <a href="index.html"><img src="img/logo.png" alt="pokestats logo"></a>
-            <p>Pokéstats</p>
-        </div>  
+          <a href="index.html"
+            ><img src="img/logo.png" alt="pokestats logo"
+          /></a>
+          <p>Pokéstats</p>
+        </div>
+      </div>
+      <div class="mobile-menu-content mobile-menu-hidden">
+        <a href="index.html">HOME</a>
+        <a href="featured.html">FEATURED</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="https://pokestat.netlify.com/">SIGN UP</a>
+      </div>
+    </div>
+    <!--End of mobile menu-->
+
+    <div class="container">
+      <nav>
+        <img
+          class="mobile-menu"
+          src="img/mobile_menu.svg"
+          alt="menu bar icon"
+        />
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/logo.png" alt="pokestats logo"
+          /></a>
+          <p>Pokéstats</p>
+        </div>
         <div class="links">
-                <a href="featured.html">FEATURED</a>
-                <a href="about.html">ABOUT US</a>
-                <a href="https://pokestat.netlify.com/">SIGN UP</a>
+          <a href="featured.html">FEATURED</a>
+          <a href="about.html">ABOUT US</a>
+          <a href="https://pokestat.netlify.com/">SIGN UP</a>
         </div>
-        </nav>
-        <header class="features">
-            <div>
-                <h1>
-                    Our Favorites
-                </h1>
-            </div>
-        </header>
-        <div class="featured-main-container">
-            <div class="featured-pokemon">
-                <div class="character-links" data-aos="zoom-out">
-                    <img src="img/electric.svg"  alt="electric icon" class="character-link" data-tab="1">
-                    <img src="img/bug.svg"   alt="bug icon" class="character-link" data-tab="2">
-                    <img src="img/grass_2.svg"   alt="grass icon" class="character-link" data-tab="3">
-                    <img src="img/water_3.svg"   alt="water icon" class="character-link" data-tab="4">
-                    <img src="img/fire_2.svg"  alt="fire icon" class="character-link" data-tab="5">
-                    <img src="img/psychic_1.svg"   alt="psychic icon" class="character-link" data-tab="6">
-                    <img src="img/normal.svg" alt="normal icon" class="character-link" data-tab="7">
-                </div> <!-- character items container --->
-                    <div class="character-items">
-                            <img class="carousel-arrows" src="img/chevrons-left.svg" onclick="plusDivs(-1)">
-                            <div class="pokemonSlides pokemon-slide-selected" data-tab="1">
-                                    <h2>Pikachu</h2>
-                                <div class="pokemon">
-                                    <div class="about-content">
-                                            <img class="pokemon-stats" alt="pikachu stats" src="img/stats_pikachu.png">
-                                            <p class="animated fadeIn">Pikachu can blast anything it comes across with a powerful jolt of electricity.
-                                            </p>
-                                    </div>
-                                    <div class="pokemon-images">
-                                            <img class="pokemon-character" alt="pikachu" src="img/pikachu.gif">
-                                            <img class="background" alt="yellow background" src="img/pokemon_back_yellow.svg">
-                                    </div>
-                                   
-                                </div>
-                            </div>
-
-                            <div class="pokemonSlides" data-tab="2">
-                                    <h2>Beedrill</h2>
-                                    <div class="pokemon">
-                                        <div class="about-content">
-                                                <img class="pokemon-stats" alt="beedrill stats" src="img/stats_beedrill.png">
-                                                <p class="animated fadeIn">Beedrill is extremely territorial, and when threatened, flies at high speeds and attacks with large, venomous stingers.</p>
-                                            </div>
-                                                <div class="pokemon-images">
-                                                        <img class="pokemon-character" id = "beedrill" alt="beedrill" src="img/beedrill.gif">
-                                                        <img class="background" alt="yellow background" src="img/pokemon_back_green.svg">
-                                                </div>
-                                    </div>
-                                </div>
-
-                                <div class="pokemonSlides" data-tab="3">
-                                        <h2>Bulbasaur</h2>
-                                        <div class="pokemon">
-                                            <div class="about-content">
-                                                    <img class="pokemon-stats" alt="bulbasaur stats" src="img/stats_bulbasaur.png">
-                                                    <p class="animated fadeIn">By soaking up the sun's rays, the seed on Bulbasaur’s back grows progressively larger to power up.</p>
-                                            </div>
-                                            <div class="pokemon-images">
-                                                    <img class="pokemon-character" id = "bulbasaur" alt="bulbasaur" 
-
-                                                    src="img/bulbasaur.gif">
-                                                    <img class="background" alt="yellow background" src="img/pokemon_back_green.svg">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="pokemonSlides" data-tab="4">
-                                            <h2>Squirtle</h2>
-                                            <div class="pokemon">
-                                                <div class="about-content">
-                                                        <img class="pokemon-stats" alt="squirtle stats" src="img/stats_squirtle.png">
-                                                        <p id="squirtle-content" class="animated fadeIn" >Squirtle’s most powerful asset is his shell, allowing it to swim at high speeds (as it minimizes water resistance), and shielding it from its enemies.</p>
-                                                </div>
-                                                    <div class="pokemon-images">
-                                                            <img class="pokemon-character" id = "squirtle" alt="squirtle" 
-                                                            src="img/squirtle.gif">
-                                                            <img class="background" alt="yellow background" src="img/pokemon_back_blue.svg">
-                                                    </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="pokemonSlides" data-tab="5">
-                                                <h2>Charizard</h2>
-                                                <div class="pokemon">
-                                                    <div class="about-content">
-                                                    <img class="pokemon-stats" alt="charizard stats" src="img/stats_charizard.png">
-                                                    <p class="animated fadeIn" id = "charizard-description" >Charizard’s ability to fly and breathe fire is one of the most deadliest of combinations. It's constantly searching for his next opponent to battle, so beware! Its fire can melt anything in its path.
-                                                        </p>
-                                                    </div>
-                                                        <div class="pokemon-images">
-                                                                <img class="pokemon-character" id="charizard" alt="charizard" 
-                                                                src="img/charizard.gif">
-                                                                <img class="background" id="charizard-bg" alt="yellow background" src="img/pokemon_back_red.svg">
-                                                        </div>
-                                                </div>
-                                            </div>
-
-                                            <div class="pokemonSlides" data-tab="6">
-                                                    <h2>Mewtwo</h2>
-                                                    <div class="pokemon">
-                                                        <div class="about-content">
-                                                                <img class="pokemon-stats" id = "mewtwo" alt="mewtwo stats" src="img/stats_mewtwo.png">
-                                                                <p class="animated fadeIn" >Mewtwo was created by science, capable of telepathy, levitation, and mind control. It is hyper-focused on defeating its foes and is known to have the most savage heart of all Pokémon.
-                                                                    </p>
-                                                        </div>
-                                                            <div class="pokemon-images">
-                                                                    <img class="pokemon-character" alt="mewtwo" 
-                                                                    src="img/mewtwo.gif">
-                                                                    <img class="background" alt="yellow background" src="img/pokemon_back_purple.svg">
-                                                            </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="pokemonSlides" data-tab="7">
-                                                        <h2>Jigglypuff</h2>
-                                                        <div class="pokemon">
-                                                            <div class="about-content">
-                                                                    <img class="pokemon-stats" alt="jigglypuff stats" src="img/stats_jigglypuff.png">
-                                                                    <p class="animated fadeIn">Don’t be fooled by Jigglypuff’s cute and unassuming exterior, for it's more powerful than it seems! Jigglypuff sings its opponents to sleep, and is able to mesmerize its foes with its eyes. 
-                                                                        </p>
-                                                            </div>
-                                                                <div class="pokemon-images">
-                                                                        <img class="pokemon-character" id = "jigglypuff" alt="jigglypuff" 
-                                                                        src="img/jigglypuff.gif">
-                                                                        <img class="background" alt="yellow background" src="img/pokemon_back_pink.svg">
-                                                                </div>
-                                                        </div>
-                                                    </div>
-
-                            <img class="carousel-arrows" src="img/chevrons-right.svg" onclick="plusDivs(1)">
-                    </div> <!-- character items container --->
-            </div> <!-- featured pokemon container --->
-            <div class="signup-content">
-                <p>Looking for someone else? Signup to view our complete list of Pokémon and get exclusive access to stats and more!</p>
-               <a href="https://pokestat.netlify.com/"><button data-aos="fade-up"
-                data-aos-duration="1000" class="sign-up-button">SIGN UP NOW</button></a>
-            </div>
-        </div> <!-- featured main container --->
-    </div> <!-- main container --->
-    <footer>
-        <div class="footer-nav-social-icons">
-                <div class="footer-nav">
-                        <div class="footer-links">
-                                <a href="featured.html">FEATURED</a>
-                                <a href="about.html">ABOUT US</a>
-                                <a href="https://pokestat.netlify.com/">SIGN UP</a>
-                        </div>
-                      </div>
-                <div class="social-icons">
-                    <a href="#"><img src="img/twitter.png" alt="twitter logo"></a>
-                    <a href="#"><img src="img/facebook.png" alt="facebook logo"></a>
-                    <a href="#"><img src="img/instagram.png" alt="instagram logo"></a>
-
-                    <a href="#"><img class = "yellow-icon" src="img/twitteryellow.png" alt="yellow twitter icon"></a>
-                    <a href="#"><img class = "yellow-icon" src="img/facebookyellow.png" alt="yellow facebook icon"></a>
-                    <a href="#"><img class = "yellow-icon" src="img/instagramyellow.png" alt="yellow instagram icon"></a>
+      </nav>
+      <header class="features">
+        <div>
+          <h1>
+            Our Favorites
+          </h1>
+        </div>
+      </header>
+      <div class="featured-main-container">
+        <div class="featured-pokemon">
+          <div class="character-links" data-aos="zoom-out">
+            <img
+              src="img/electric.svg"
+              alt="electric icon"
+              class="character-link"
+              data-tab="1"
+            />
+            <img
+              src="img/bug.svg"
+              alt="bug icon"
+              class="character-link"
+              data-tab="2"
+            />
+            <img
+              src="img/grass_2.svg"
+              alt="grass icon"
+              class="character-link"
+              data-tab="3"
+            />
+            <img
+              src="img/water_3.svg"
+              alt="water icon"
+              class="character-link"
+              data-tab="4"
+            />
+            <img
+              src="img/fire_2.svg"
+              alt="fire icon"
+              class="character-link"
+              data-tab="5"
+            />
+            <img
+              src="img/psychic_1.svg"
+              alt="psychic icon"
+              class="character-link"
+              data-tab="6"
+            />
+            <img
+              src="img/normal.svg"
+              alt="normal icon"
+              class="character-link"
+              data-tab="7"
+            />
+          </div>
+          <!-- character items container --->
+          <div class="character-items">
+            <img
+              class="carousel-arrows"
+              src="img/chevrons-left.svg"
+              onclick="plusDivs(-1)"
+            />
+            <div class="pokemonSlides pokemon-slide-selected" data-tab="1">
+              <h2>Pikachu</h2>
+              <div class="pokemon">
+                <div class="about-content">
+                  <img
+                    class="pokemon-stats"
+                    alt="pikachu stats"
+                    src="img/stats_pikachu.png"
+                  />
+                  <p class="animated fadeIn">
+                    Pikachu can blast anything it comes across with a powerful
+                    jolt of electricity.
+                  </p>
                 </div>
+                <div class="pokemon-images">
+                  <img
+                    class="pokemon-character"
+                    alt="pikachu"
+                    src="img/pikachu.gif"
+                  />
+                  <img
+                    class="background"
+                    alt="yellow background"
+                    src="img/pokemon_back_yellow.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="pokemonSlides" data-tab="2">
+              <h2>Beedrill</h2>
+              <div class="pokemon">
+                <div class="about-content">
+                  <img
+                    class="pokemon-stats"
+                    alt="beedrill stats"
+                    src="img/stats_beedrill.png"
+                  />
+                  <p class="animated fadeIn">
+                    Beedrill is extremely territorial, and when threatened,
+                    flies at high speeds and attacks with large, venomous
+                    stingers.
+                  </p>
+                </div>
+                <div class="pokemon-images">
+                  <img
+                    class="pokemon-character"
+                    id="beedrill"
+                    alt="beedrill"
+                    src="img/beedrill.gif"
+                  />
+                  <img
+                    class="background"
+                    alt="yellow background"
+                    src="img/pokemon_back_green.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="pokemonSlides" data-tab="3">
+              <h2>Bulbasaur</h2>
+              <div class="pokemon">
+                <div class="about-content">
+                  <img
+                    class="pokemon-stats"
+                    alt="bulbasaur stats"
+                    src="img/stats_bulbasaur.png"
+                  />
+                  <p class="animated fadeIn">
+                    By soaking up the sun's rays, the seed on Bulbasaur’s back
+                    grows progressively larger to power up.
+                  </p>
+                </div>
+                <div class="pokemon-images">
+                  <img
+                    class="pokemon-character"
+                    id="bulbasaur"
+                    alt="bulbasaur"
+                    src="img/bulbasaur.gif"
+                  />
+                  <img
+                    class="background"
+                    alt="yellow background"
+                    src="img/pokemon_back_green.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="pokemonSlides" data-tab="4">
+              <h2>Squirtle</h2>
+              <div class="pokemon">
+                <div class="about-content">
+                  <img
+                    class="pokemon-stats"
+                    alt="squirtle stats"
+                    src="img/stats_squirtle.png"
+                  />
+                  <p id="squirtle-content" class="animated fadeIn">
+                    Squirtle’s most powerful asset is his shell, allowing it to
+                    swim at high speeds (as it minimizes water resistance), and
+                    shielding it from its enemies.
+                  </p>
+                </div>
+                <div class="pokemon-images">
+                  <img
+                    class="pokemon-character"
+                    id="squirtle"
+                    alt="squirtle"
+                    src="img/squirtle.gif"
+                  />
+                  <img
+                    class="background"
+                    alt="yellow background"
+                    src="img/pokemon_back_blue.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="pokemonSlides" data-tab="5">
+              <h2>Charizard</h2>
+              <div class="pokemon">
+                <div class="about-content">
+                  <img
+                    class="pokemon-stats"
+                    alt="charizard stats"
+                    src="img/stats_charizard.png"
+                  />
+                  <p class="animated fadeIn" id="charizard-description">
+                    Charizard’s ability to fly and breathe fire is one of the
+                    most deadliest of combinations. It's constantly searching
+                    for his next opponent to battle, so beware! Its fire can
+                    melt anything in its path.
+                  </p>
+                </div>
+                <div class="pokemon-images">
+                  <img
+                    class="pokemon-character"
+                    id="charizard"
+                    alt="charizard"
+                    src="img/charizard.gif"
+                  />
+                  <img
+                    class="background"
+                    id="charizard-bg"
+                    alt="yellow background"
+                    src="img/pokemon_back_red.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="pokemonSlides" data-tab="6">
+              <h2>Mewtwo</h2>
+              <div class="pokemon">
+                <div class="about-content">
+                  <img
+                    class="pokemon-stats"
+                    id="mewtwo"
+                    alt="mewtwo stats"
+                    src="img/stats_mewtwo.png"
+                  />
+                  <p class="animated fadeIn">
+                    Mewtwo was created by science, capable of telepathy,
+                    levitation, and mind control. It is hyper-focused on
+                    defeating its foes and is known to have the most savage
+                    heart of all Pokémon.
+                  </p>
+                </div>
+                <div class="pokemon-images">
+                  <img
+                    class="pokemon-character"
+                    alt="mewtwo"
+                    src="img/mewtwo.gif"
+                  />
+                  <img
+                    class="background"
+                    alt="yellow background"
+                    src="img/pokemon_back_purple.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="pokemonSlides" data-tab="7">
+              <h2>Jigglypuff</h2>
+              <div class="pokemon">
+                <div class="about-content">
+                  <img
+                    class="pokemon-stats"
+                    alt="jigglypuff stats"
+                    src="img/stats_jigglypuff.png"
+                  />
+                  <p class="animated fadeIn">
+                    Don’t be fooled by Jigglypuff’s cute and unassuming
+                    exterior, for it's more powerful than it seems! Jigglypuff
+                    sings its opponents to sleep, and is able to mesmerize its
+                    foes with its eyes.
+                  </p>
+                </div>
+                <div class="pokemon-images">
+                  <img
+                    class="pokemon-character"
+                    id="jigglypuff"
+                    alt="jigglypuff"
+                    src="img/jigglypuff.gif"
+                  />
+                  <img
+                    class="background"
+                    alt="yellow background"
+                    src="img/pokemon_back_pink.svg"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <img
+              class="carousel-arrows"
+              src="img/chevrons-right.svg"
+              onclick="plusDivs(1)"
+            />
+          </div>
+          <!-- character items container --->
         </div>
-        <div class="copyright">
-            Pokéstats 2019 | 1.000.MY.POKE | Disclaimer | Privacy Policy
+        <!-- featured pokemon container --->
+        <div class="signup-content">
+          <p>
+            Looking for someone else? Signup to view our complete list of
+            Pokémon and get exclusive access to stats and more!
+          </p>
+          <a href="https://pokestat.netlify.com/"
+            ><button
+              data-aos="fade-up"
+              data-aos-duration="1000"
+              class="sign-up-button"
+            >
+              SIGN UP NOW
+            </button></a
+          >
         </div>
-        </footer>
-  <script src="js/header.js"></script>
-  <script src="js/mobilenav.js"></script>
-  <script src="js/featured.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
+      </div>
+      <!-- featured main container --->
+    </div>
+    <!-- main container --->
+    <footer>
+      <div class="footer-nav-social-icons">
+        <div class="footer-nav">
+          <div class="footer-links">
+            <a href="featured.html">FEATURED</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="https://pokestat.netlify.com/">SIGN UP</a>
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="#"><img src="img/twitter.png" alt="twitter logo"/></a>
+          <a href="#"><img src="img/facebook.png" alt="facebook logo"/></a>
+          <a href="#"><img src="img/instagram.png" alt="instagram logo"/></a>
+
+          <a href="#"
+            ><img
+              class="yellow-icon"
+              src="img/twitteryellow.png"
+              alt="yellow twitter icon"
+          /></a>
+          <a href="#"
+            ><img
+              class="yellow-icon"
+              src="img/facebookyellow.png"
+              alt="yellow facebook icon"
+          /></a>
+          <a href="#"
+            ><img
+              class="yellow-icon"
+              src="img/instagramyellow.png"
+              alt="yellow instagram icon"
+          /></a>
+        </div>
+      </div>
+      <div class="copyright">
+        Pokéstats 2019 | 1.000.MY.POKE | Disclaimer | Privacy Policy
+      </div>
+    </footer>
+    <script src="js/mobilenav.js"></script>
+    <script src="js/featured.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
       AOS.init();
     </script>
-</body>
+  </body>
 </html>
