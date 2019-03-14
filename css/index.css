@@ -119,7 +119,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: "";
+  content: '';
   content: none;
 }
 table {
@@ -142,7 +142,7 @@ body {
   background-repeat: repeat;
   background-size: 1.5rem 1.5rem;
   width: 100%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   letter-spacing: 0.1rem;
   overflow-y: scroll;
   overflow-x: hidden;
@@ -885,6 +885,7 @@ nav .mobile-menu-btn {
 .mobile-menu .mobile-nav .mobile-menu-btn {
   z-index: 15;
   display: none;
+  cursor: pointer;
 }
 .mobile-menu .mobile-nav .mobile-menu-btn img {
   align-self: center;
