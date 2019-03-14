@@ -1587,9 +1587,9 @@ nav .mobile-menu-btn {
 }
 @media (max-width: 800px) {
   .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images .background {
-    height: 30rem;
+    height: 26rem;
     margin-top: -25rem;
-    margin-left: -5rem;
+    margin-left: -4rem;
   }
 }
 .featured-main-container .featured-pokemon .character-items .pokemonSlides .pokemon .pokemon-images #charizard-bg {
