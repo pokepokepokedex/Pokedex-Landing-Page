@@ -881,8 +881,11 @@ nav .mobile-menu-btn {
   justify-content: none;
   align-items: none;
   flex-direction: column;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 .about-section-main .about-top-section {
+  margin-top: 8rem;
   margin-left: 2rem;
   margin-right: 2rem;
 }
