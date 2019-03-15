@@ -244,6 +244,16 @@ footer {
   width: 100%;
   height: 12rem;
 }
+@media (max-width: 800px) {
+  footer {
+    height: 15rem;
+  }
+}
+@media (max-width: 800px) {
+  footer {
+    height: 16rem;
+  }
+}
 footer .footer-nav-social-icons {
   display: flex;
   justify-content: space-around;
@@ -252,6 +262,11 @@ footer .footer-nav-social-icons {
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
+}
+@media (max-width: 800px) {
+  footer .footer-nav-social-icons {
+    margin-top: 2.5rem;
+  }
 }
 @media (max-width: 390px) {
   footer .footer-nav-social-icons {
@@ -681,7 +696,7 @@ nav .mobile-menu-btn {
 }
 @media (max-width: 800px) {
   .homepage .feature-three {
-    height: 400px;
+    height: 500px;
   }
 }
 @media (max-width: 540px) {
@@ -690,7 +705,7 @@ nav .mobile-menu-btn {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 500px;
+    height: 700px;
   }
 }
 .homepage .feature-three .feature-description {
@@ -860,6 +875,7 @@ nav .mobile-menu-btn {
 @media (max-width: 800px) {
   .homepage .last-section .feature-description p {
     text-align: center;
+    font-size: 1.6rem;
   }
 }
 .homepage .last-section .win-image {
@@ -878,6 +894,19 @@ nav .mobile-menu-btn {
 @media (max-width: 540px) {
   .homepage .last-section .win-image {
     max-width: 400px;
+  }
+}
+@media (max-width: 800px) {
+  .homepage .last-section .win-image img.stats {
+    margin-right: -10rem;
+    max-width: 80%;
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 540px) {
+  .homepage .last-section .win-image img.stats {
+    max-width: 400px;
+    max-width: 90%;
   }
 }
 .homepage .sign-up-button {
