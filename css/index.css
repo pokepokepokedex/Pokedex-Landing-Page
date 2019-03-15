@@ -668,7 +668,8 @@ nav .mobile-menu-btn {
   }
 }
 .homepage .feature-three {
-  padding-bottom: 5rem;
+  padding-bottom: 1rem;
+  padding-top: 5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -777,7 +778,7 @@ nav .mobile-menu-btn {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-direction: row-reverse;
+  flex-direction: row;
   max-width: 900px;
   margin: 0 auto;
 }
@@ -791,7 +792,7 @@ nav .mobile-menu-btn {
 }
 .homepage .last-section .background {
   height: 600px;
-  clip-path: polygon(0 0, 100% 20%, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 100%);
   background-color: #1d1d1d;
   z-index: 0;
   position: absolute;
@@ -805,8 +806,8 @@ nav .mobile-menu-btn {
 }
 @media (max-width: 540px) {
   .homepage .last-section .background {
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-    height: 600px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    height: 800px;
   }
 }
 .homepage .last-section .feature-description {
@@ -837,6 +838,11 @@ nav .mobile-menu-btn {
 .homepage .last-section .feature-description h2 span {
   color: #f8ff33;
 }
+@media (max-width: 800px) {
+  .homepage .last-section .feature-description h2 {
+    text-align: center;
+  }
+}
 @media (max-width: 540px) {
   .homepage .last-section .feature-description h2 {
     margin-top: 5rem;
@@ -851,20 +857,33 @@ nav .mobile-menu-btn {
   line-height: 1.6;
   align-content: flex-start;
 }
-@media (max-width: 540px) {
+@media (max-width: 800px) {
   .homepage .last-section .feature-description p {
     text-align: center;
   }
 }
 .homepage .last-section .win-image {
-  z-index: 1;
-  position: relative;
-  padding-right: 3rem;
+  height: auto;
+  max-width: 100%;
+  margin-right: -20rem;
+  z-index: 5;
+}
+@media (max-width: 800px) {
+  .homepage .last-section .win-image {
+    margin-right: -10rem;
+    max-width: 80%;
+    margin-left: -10rem;
+  }
+}
+@media (max-width: 540px) {
+  .homepage .last-section .win-image {
+    max-width: 400px;
+  }
 }
 .homepage .sign-up-button {
   padding: 2.5rem;
   width: 23rem;
-  margin-top: 8%;
+  margin-top: 15%;
   border-radius: 1rem;
   background-color: #f8ff34;
   box-shadow: 2px 2px 15px rgba(250, 255, 153, 0.9), 2px 2px 6px rgba(0, 0, 0, 0.5);
@@ -880,6 +899,21 @@ nav .mobile-menu-btn {
   cursor: pointer;
   color: black;
   border-radius: 2rem;
+  transform: scale(1.15, 1.15);
+  transform-origin: left;
+}
+@media (max-width: 800px) {
+  .homepage .sign-up-button {
+    margin-left: 3rem;
+  }
+  .homepage .sign-up-button:hover {
+    transform-origin: center;
+  }
+}
+@media (max-width: 540px) {
+  .homepage .sign-up-button {
+    margin-left: 0;
+  }
 }
 .mobile-menu {
   display: none;
