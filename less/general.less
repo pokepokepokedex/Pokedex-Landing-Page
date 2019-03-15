@@ -31,15 +31,15 @@ body {
     height: 50rem;
     background-color: @pokestats-color-primary;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
-    @media @phone{
-      height: 30rem;
-    }
-
-
   clip-path: polygon(0 0, 100% 0, 100% 56%, 0 100%);
   position: absolute;
   z-index: -1;
   width: 100%;
+
+  @media @phone{
+    height: 30rem;
+  }
+
 }
 
 .header-backgroundtwo{
@@ -50,6 +50,7 @@ body {
   z-index: 0;
   position: absolute;
   width: 100%;
+  
   @media @phone{
     height: 30rem;
   }

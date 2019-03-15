@@ -280,12 +280,12 @@
     margin-bottom: 200px;
 
     @media @tablet {
-      height: 400px;
+      height: 500px;
     }
 
     @media @phone {
       .flex(center, center, column);
-      height: 500px;
+      height: 700px;
     }
 
     .feature-description {
@@ -426,6 +426,7 @@
 
         @media @tablet {
           text-align: center;
+          font-size: 1.6rem;
         }
       }
     }
@@ -444,6 +445,23 @@
 
       @media @phone {
         max-width: 400px;
+
+      }
+
+      img.stats {
+
+        @media @tablet {
+          margin-right: -10rem;
+          max-width: 80%;
+          margin-left: 2rem;
+        }
+  
+        @media @phone {
+          max-width: 400px;
+          max-width: 90%;
+        }
+
+
       }
     }
   }
