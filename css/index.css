@@ -792,7 +792,7 @@ nav .mobile-menu-btn {
 }
 .homepage .last-section .background {
   height: 600px;
-  clip-path: polygon(0 0, 100% 20%, 100% 75%, 0 100%);
+  clip-path: polygon(0 0, 100% 18%, 100% 100%, 0 100%);
   background-color: #1d1d1d;
   z-index: 0;
   position: absolute;
@@ -806,8 +806,8 @@ nav .mobile-menu-btn {
 }
 @media (max-width: 540px) {
   .homepage .last-section .background {
-    clip-path: polygon(0 0, 100% 0, 100% 75%, 0 100%);
-    height: 600px;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    height: 800px;
   }
 }
 .homepage .last-section .feature-description {
@@ -838,6 +838,11 @@ nav .mobile-menu-btn {
 .homepage .last-section .feature-description h2 span {
   color: #f8ff33;
 }
+@media (max-width: 800px) {
+  .homepage .last-section .feature-description h2 {
+    text-align: center;
+  }
+}
 @media (max-width: 540px) {
   .homepage .last-section .feature-description h2 {
     margin-top: 5rem;
@@ -852,7 +857,7 @@ nav .mobile-menu-btn {
   line-height: 1.6;
   align-content: flex-start;
 }
-@media (max-width: 540px) {
+@media (max-width: 800px) {
   .homepage .last-section .feature-description p {
     text-align: center;
   }
@@ -862,6 +867,18 @@ nav .mobile-menu-btn {
   max-width: 100%;
   margin-right: -20rem;
   z-index: 5;
+}
+@media (max-width: 800px) {
+  .homepage .last-section .win-image {
+    margin-right: -10rem;
+    max-width: 80%;
+    margin-left: -10rem;
+  }
+}
+@media (max-width: 540px) {
+  .homepage .last-section .win-image {
+    max-width: 400px;
+  }
 }
 .homepage .sign-up-button {
   padding: 2.5rem;
@@ -882,8 +899,21 @@ nav .mobile-menu-btn {
   cursor: pointer;
   color: black;
   border-radius: 2rem;
-  transform: scale(1.5, 1.5);
+  transform: scale(1.15, 1.15);
   transform-origin: left;
+}
+@media (max-width: 800px) {
+  .homepage .sign-up-button {
+    margin-left: 3rem;
+  }
+  .homepage .sign-up-button:hover {
+    transform-origin: center;
+  }
+}
+@media (max-width: 540px) {
+  .homepage .sign-up-button {
+    margin-left: 0;
+  }
 }
 .mobile-menu {
   display: none;
