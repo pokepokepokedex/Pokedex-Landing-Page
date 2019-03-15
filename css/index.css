@@ -460,6 +460,7 @@ nav .mobile-menu-btn {
   font-size: 1.4rem;
   position: relative;
   overflow: hidden;
+  outline: 0;
 }
 .homepage .feature-one .feature-description button span {
   position: relative;
@@ -873,6 +874,7 @@ nav .mobile-menu-btn {
   position: relative;
   overflow: hidden;
   transition: 0.2s;
+  outline: 0;
 }
 .homepage .sign-up-button:hover {
   cursor: pointer;
@@ -1498,7 +1500,7 @@ nav .mobile-menu-btn {
   text-align: center;
   width: 23rem;
   border-radius: 1rem;
-  background-color: #F8FF34;
+  background-color: #f8ff34;
   box-shadow: 2px 2px 15px rgba(250, 255, 153, 0.9), 2px 2px 6px rgba(0, 0, 0, 0.5);
   border-style: none;
   color: #1d1d1d;
@@ -1506,6 +1508,7 @@ nav .mobile-menu-btn {
   position: relative;
   overflow: hidden;
   transition: 0.2s;
+  outline: 0;
 }
 .featured-main-container .signup-content .sign-up-button:hover {
   cursor: pointer;
