@@ -1,161 +1,225 @@
-<!doctype html>
+<!DOCTYPE html>
 
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <title>Pokéstats - The Ultimate Pokémon App</title>
-  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
-  <link href="css/index.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
+    <title>Pokéstats - The Ultimate Pokémon App</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,500,700"
+      rel="stylesheet"
+    />
+    <link href="css/index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
 
-<body>
+  <body>
     <div class="header-background"></div>
     <div class="header-backgroundtwo"></div>
 
-    <div class = "mobile-menu">
-      <div class = "mobile-nav">
-        <img class="mobile-menu-btn" src="img/mobile_menu.svg" alt = "menu bar icon">  
-        <div class ="logo">
-            <a href="index.html"><img src="img/logo.png" alt="pokestats logo"></a>
-                    <p>Pokéstats</p>
+    <div class="mobile-menu">
+      <div class="mobile-nav">
+        <img
+          class="mobile-menu-btn"
+          src="img/mobile_menu.svg"
+          alt="menu bar icon"
+        />
+        <div class="logo">
+          <a href="index.html"
+            ><img src="img/logo.png" alt="pokestats logo"
+          /></a>
+          <p>Pokéstats</p>
         </div>
       </div>
-        <div class="mobile-menu-content mobile-menu-hidden">
-                <a href="index.html">HOME</a>
-                <a href="featured.html">FEATURED</a>
-                <a href="about.html" >ABOUT US</a>
-                <a href="https://pokestat.netlify.com/">SIGN UP</a>
-        </div>
-  </div> <!--End of mobile menu-->
+      <div class="mobile-menu-content mobile-menu-hidden">
+        <a href="index.html">HOME</a>
+        <a href="featured.html">FEATURED</a>
+        <a href="about.html">ABOUT US</a>
+        <a href="https://pokestat.netlify.com/">SIGN UP</a>
+      </div>
+    </div>
+    <!--End of mobile menu-->
 
     <div class="container">
-        <nav> 
+      <nav>
         <div class="logo">
-            <img src="img/logo.png" alt="pokestats logo">
-            <p>Pokéstats</p>
-        </div>  
-        <div class="links">
-                <a href="featured.html">FEATURED</a>
-                <a href="about.html">ABOUT US</a>
-                <a href="https://pokestat.netlify.com/">SIGN UP</a>
+          <img src="img/logo.png" alt="pokestats logo" />
+          <p>Pokéstats</p>
         </div>
-        </nav>
-        <header>
+        <div class="links">
+          <a href="featured.html">FEATURED</a>
+          <a href="about.html">ABOUT US</a>
+          <a href="https://pokestat.netlify.com/">SIGN UP</a>
+        </div>
+      </nav>
+      <header>
         <h1>Pokéstats</h1>
-     <div>
-                <h2>
-                    Everything you need to
-                    <div class="main-word" id='rotating-word'>
-                        KNOW
-                    </div>
-                    them all
-                </h2>
+        <div>
+          <h2>
+            Everything you need to
+            <div class="main-word" id="rotating-word">
+              KNOW
             </div>
-        </header>
-        <div class="homepage">
-          <!-- <img class = "water-icon" src="img/water_3.svg" alt="water type icon"> -->
-            <section class="feature-one">
-                <section class="feature-description">
-                    <h2>
-                        FIND any Pokémon
-                        <img data-aos="fade-right"
-                        data-aos-offset="400"
-                        data-aos-easing="ease-in" class="arrow" src="img/arrow_blue.svg" alt="blue arrow">
-                        <img data-aos="fade-right"
-                        data-aos-offset="400"
-                        data-aos-easing="ease-in"
-                        class="circle" src="img/circle_blue.png" alt="blue circle">
-                    </h2>
-                    <p>
-                    Find your favorite Pokémon right away through our extensive directory.   
-                    </p>
-                   <a href="featured.html"><button><span>STAFF FAVORITES</span></button></a>
-                </section>
-                <img data-aos="fade-right"
+            them all
+          </h2>
+        </div>
+      </header>
+      <div class="homepage">
+        <!-- <img class = "water-icon" src="img/water_3.svg" alt="water type icon"> -->
+        <section class="feature-one">
+          <section class="feature-description">
+            <h2>
+              FIND any Pokémon
+              <img
+                data-aos="fade-right"
                 data-aos-offset="400"
-                data-aos-easing="ease-in-sine" src="img/mac_mockup.png" alt="pokestats app homescreen image">
-            </section>
-            <section class = "feature-two">
-                    <div class="background"></div>
-                    <section class="feature-description">
-                        <h2><span>LEARN</span> about your Pokémon</h2>
-                        <p>Uncover everything you need to know about any Pokemon, including their HP, strengths, weaknesses, special defenses, and more! </p>
-                    </section>
-                    <div class="learn-images">
-                      <img data-aos="fade-up-right" class="stats" src="img/learn_stats.png" alt="learn stats image">
-                      <div class="pikachu-group">
-                          <!-- <img data-aos="fade-up"
+                data-aos-easing="ease-in"
+                class="arrow"
+                src="img/arrow_blue.svg"
+                alt="blue arrow"
+              />
+              <img
+                data-aos="fade-right"
+                data-aos-offset="400"
+                data-aos-easing="ease-in"
+                class="circle"
+                src="img/circle_blue.png"
+                alt="blue circle"
+              />
+            </h2>
+            <p>
+              Find your favorite Pokémon right away through our extensive
+              directory.
+            </p>
+            <a href="featured.html"
+              ><button><span>STAFF FAVORITES</span></button></a
+            >
+          </section>
+          <img
+            data-aos="fade-right"
+            data-aos-offset="400"
+            data-aos-easing="ease-in-sine"
+            src="img/mac_mockup.png"
+            alt="pokestats app homescreen image"
+          />
+        </section>
+        <section class="feature-two">
+          <div class="background"></div>
+          <section class="feature-description">
+            <h2><span>LEARN</span> about your Pokémon</h2>
+            <p>
+              Uncover everything you need to know about any Pokemon, including
+              their HP, strengths, weaknesses, special defenses, and more!
+            </p>
+          </section>
+          <div class="learn-images">
+            <img
+              data-aos="fade-up-right"
+              class="stats"
+              src="img/learn_stats.png"
+              alt="learn stats image"
+            />
+            <div class="pikachu-group">
+              <!-- <img data-aos="fade-up"
                           data-aos-offset="400"
                           data-aos-easing="ease-in" class="arrow" src="img/arrow_orange.svg" alt="orange arrow">
                           <img data-aos="fade-up"
                           data-aos-offset="400"
                           data-aos-easing="ease-in"class="circle" src="img/circle_orange.png" alt="orange circle"> -->
-                        <img class="pikachu" src="img/Pikachu.gif" alt="Pikachu gif">
-                        <img class="shadow" src="img/pokemon_shadow.png" alt="Pikachu shadow">
-                      </div>
-                    </div>
-            </section>
-            <section class="feature-three">
-                <img src="img/open_pokeball.png" alt="open pokeball">
-                        <section class="feature-description">
-                            <h2>
-                                    TRACK and grow your Pokémon
-                            </h2>
-                            <p>
-                                    Build your very own powerful team of Pokémon. You can build and customize as many teams as you want.  
-                            </p>
-                        </section>
-
-            </section>
-            <div class="last-section">
-                    <section class = "feature-four">
-                            <div class="background"></div>
-                            <section class="feature-description">
-                                <h2><span>WIN</span>  your battles</h2>
-                                <p>Compare stats between Pokémon to find the upperhand and play to your advantage.</p>
-                                <a href="https://pokestat.netlify.com/"><button class="sign-up-button">SIGN UP NOW</button></a>
-                            </section>
-                            <div data-aos="fade-up"
-                            data-aos-duration="1000" class="win-image">
-                            <img class="stats" src="img/mockup2.png" alt="feature four image">
-                            </div>
-                    </section>
-                   
+              <img class="pikachu" src="img/Pikachu.gif" alt="Pikachu gif" />
+              <img
+                class="shadow"
+                src="img/pokemon_shadow.png"
+                alt="Pikachu shadow"
+              />
             </div>
+          </div>
+        </section>
+        <section class="feature-three">
+          <img src="img/open_pokeball.png" alt="open pokeball" />
+          <section class="feature-description">
+            <h2>
+              TRACK and grow your Pokémon
+            </h2>
+            <p>
+              Build your very own powerful team of Pokémon. You can build and
+              customize as many teams as you want.
+            </p>
+          </section>
+        </section>
+        <div class="last-section">
+          <section class="feature-four">
+            <div class="background"></div>
+            <section class="feature-description">
+              <h2><span>WIN</span> your battles</h2>
+              <p>
+                Compare stats between Pokémon to find the upperhand and play to
+                your advantage.
+              </p>
+              <a href="https://pokestat.netlify.com/"
+                ><button class="sign-up-button">SIGN UP NOW</button></a
+              >
+            </section>
+            <div data-aos="fade-up" data-aos-duration="1000" class="win-image">
+              <img
+                class="win-image"
+                src="img/mockup2.png"
+                alt="feature four image"
+              />
+            </div>
+          </section>
         </div>
-    </div> <!-- main container --->
+      </div>
+    </div>
+    <!-- main container --->
     <footer>
-        <div class="footer-nav-social-icons">
-                <div class="footer-nav">
-                        <div class="footer-links">
-                                <a href="featured.html">FEATURED</a>
-                                <a href="about.html">ABOUT US</a>
-                                <a href="https://pokestat.netlify.com/">SIGN UP</a>
-                        </div>
-                      </div>
-                <div class="social-icons">
-                    <a href="#"><img src="img/twitter.png" alt="twitter logo"></a>
-                    <a href="#"><img src="img/facebook.png" alt="facebook logo"></a>
-                    <a href="#"><img src="img/instagram.png" alt="instagram logo"></a>
+      <div class="footer-nav-social-icons">
+        <div class="footer-nav">
+          <div class="footer-links">
+            <a href="featured.html">FEATURED</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="https://pokestat.netlify.com/">SIGN UP</a>
+          </div>
+        </div>
+        <div class="social-icons">
+          <a href="#"><img src="img/twitter.png" alt="twitter logo"/></a>
+          <a href="#"><img src="img/facebook.png" alt="facebook logo"/></a>
+          <a href="#"><img src="img/instagram.png" alt="instagram logo"/></a>
 
-                    <a href="#"><img class = "yellow-icon" src="img/twitteryellow.png" alt="yellow twitter icon"></a>
-                    <a href="#"><img class = "yellow-icon" src="img/facebookyellow.png" alt="yellow facebook icon"></a>
-                    <a href="#"><img class = "yellow-icon" src="img/instagramyellow.png" alt="yellow instagram icon"></a>
-                </div>
+          <a href="#"
+            ><img
+              class="yellow-icon"
+              src="img/twitteryellow.png"
+              alt="yellow twitter icon"
+          /></a>
+          <a href="#"
+            ><img
+              class="yellow-icon"
+              src="img/facebookyellow.png"
+              alt="yellow facebook icon"
+          /></a>
+          <a href="#"
+            ><img
+              class="yellow-icon"
+              src="img/instagramyellow.png"
+              alt="yellow instagram icon"
+          /></a>
         </div>
-        <div class="copyright">
-            Pokéstats 2019 | 1.000.MY.POKE | Disclaimer | Privacy Policy
-        </div>
-        </footer>
-  <script src="js/header.js"></script>
-  <script src="js/mobilenav.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
+      </div>
+      <div class="copyright">
+        Pokéstats 2019 | 1.000.MY.POKE | Disclaimer | Privacy Policy
+      </div>
+    </footer>
+    <script src="js/header.js"></script>
+    <script src="js/mobilenav.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
       AOS.init();
     </script>
-</body>
+  </body>
 </html>
